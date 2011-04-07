@@ -1,0 +1,18 @@
+<h1>Listing worksheets</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for worksheet in @worksheets %>
+  <tr>
+    <td><%= link_to 'Show', worksheet %></td>
+    <td><%= link_to 'Edit', edit_worksheet_path(worksheet) %></td>
+    <td><%= link_to 'Destroy', worksheet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New worksheet', new_worksheet_path %>

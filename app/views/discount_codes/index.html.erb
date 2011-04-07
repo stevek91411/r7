@@ -1,0 +1,18 @@
+<h1>Listing discount_codes</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for discount_code in @discount_codes %>
+  <tr>
+    <td><%= link_to 'Show', discount_code %></td>
+    <td><%= link_to 'Edit', edit_discount_code_path(discount_code) %></td>
+    <td><%= link_to 'Destroy', discount_code, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New discount_code', new_discount_code_path %>

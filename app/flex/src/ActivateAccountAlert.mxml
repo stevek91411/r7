@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" height="205" width="300" backgroundColor="#FFFFFF"   
+                		cornerRadius="10" verticalAlign="middle" 
+                		paddingLeft="0" paddingRight="0" verticalGap="4"               		
+                		paddingTop="10" horizontalAlign="center"  backgroundAlpha=".7">
+
+		<mx:VBox horizontalAlign="center" width="90%" 
+			borderStyle="solid"  borderThickness="2"   borderColor="#000000" cornerRadius="10" backgroundColor="#FFC480"   height="110" verticalAlign="middle">
+		 	<mx:TextArea width="95%" fontSize="18" fontWeight="bold" backgroundColor="#F5D976" height="90">
+		 	 	<mx:text>Please wait while your account is activiated.</mx:text>
+		 	</mx:TextArea>
+		</mx:VBox>
+		
+<mx:Script>
+		<![CDATA[
+		import flash.net.navigateToURL;	
+			 
+	       public function continueToPaypal():void {
+            var url:String = "https://www.sandbox.paypal.com/cgi-bin/webscr";
+            var request:URLRequest = new URLRequest(url);
+            var variables:URLVariables = new URLVariables();
+            variables.cmd = "_s-xclick"
+            variables.hosted_button_id = "36362";
+            request.data = variables;
+            navigateToURL(request);
+        }
+
+	
+    ]]>
+	</mx:Script>
+ 		
+</mx:VBox>	
+
+

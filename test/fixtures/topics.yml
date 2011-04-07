@@ -1,0 +1,20 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# one:
+#   column: value
+#
+# two:
+#   column: value
+topic1:
+  topic_id: 1
+  no_of_problems: 20
+  no_of_rows: 4
+  no_of_cols: 4
+  display_label: displaylabel1
+  full_desciption: fullDesciption1
+  problem_generator_class: problemGeneratorClass1
+  help_view_ctl_class: helpviewctlclass
+  parameters: parameters1
+  max_time_in_sec: 30
+  problem_view_ctl_class: problemViewCtlClass1
+  created_at: <%= 1.days.ago.to_s :db %>

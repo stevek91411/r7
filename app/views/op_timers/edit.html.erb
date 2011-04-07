@@ -1,0 +1,12 @@
+<h1>Editing op_timer</h1>
+
+<%= error_messages_for :op_timer %>
+
+<% form_for(@op_timer) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @op_timer %> |
+<%= link_to 'Back', op_timers_path %>

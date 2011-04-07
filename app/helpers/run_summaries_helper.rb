@@ -1,0 +1,2 @@
+module RunSummariesHelper
+end

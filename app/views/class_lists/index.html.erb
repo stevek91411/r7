@@ -1,0 +1,18 @@
+<h1>Listing class_lists</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for class_list in @class_lists %>
+  <tr>
+    <td><%= link_to 'Show', class_list %></td>
+    <td><%= link_to 'Edit', edit_class_list_path(class_list) %></td>
+    <td><%= link_to 'Destroy', class_list, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New class_list', new_class_list_path %>

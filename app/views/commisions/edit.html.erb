@@ -1,0 +1,12 @@
+<h1>Editing commision</h1>
+
+<%= error_messages_for :commision %>
+
+<% form_for(@commision) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @commision %> |
+<%= link_to 'Back', commisions_path %>

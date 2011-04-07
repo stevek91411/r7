@@ -1,0 +1,12 @@
+<h1>Editing parent</h1>
+
+<%= error_messages_for :parent %>
+
+<% form_for(@parent) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @parent %> |
+<%= link_to 'Back', parents_path %>

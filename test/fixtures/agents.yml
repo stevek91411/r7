@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+agent:
+  id: 10
+  login: bell
+  first_name: maribel
+  last_name: kirkham
+  address1: 23 broad st
+  address2: 
+  city: wodland hills
+  state: ca
+  zipcode: 91367
+  email: stevek91411@yahoo.com
+  telephone_home: 818 333 2211
+  telephone_cell: 818 555 66666
+  payment_method: cheque
+  registered: "2011-05-23"
+  agent_code: bell
+  parent_commision_percentage: 30  # percentage commision
+  subagent_commision_percentage: 10  # percentage commision
+  membership_discount: 10  # discount in $ for members
+  superagent_id: 0
+  superagent_login: admin

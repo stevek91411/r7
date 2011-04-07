@@ -1,0 +1,12 @@
+<h1>Editing worksheet</h1>
+
+<%= error_messages_for :worksheet %>
+
+<% form_for(@worksheet) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @worksheet %> |
+<%= link_to 'Back', worksheets_path %>

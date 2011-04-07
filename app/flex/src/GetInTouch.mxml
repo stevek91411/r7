@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	creationComplete="init()" 	
+	layout="horizontal"   paddingLeft="0"  paddingTop="0"
+	paddingRight="0"  
+	cornerRadius="10"  backgroundAlpha="0"	  
+	width="300" height="370" paddingBottom="0">
+   	      		
+	<mx:VBox  id="contactUsBox"
+		cornerRadius="10"
+	    horizontalAlign="center" 
+     	verticalAlign="top"   
+     	paddingRight="0" verticalGap="4" paddingTop="5"
+     	   width="290">
+    
+    	<mx:HBox width="100%" horizontalAlign="center">
+    		 	  <mx:Label text="Contact Mathspert" fontWeight="bold" fontSize="20" color="#4F5023"/>  
+    	</mx:HBox>
+ 	  <mx:HBox width="90%" horizontalAlign="left" verticalAlign="middle"> 	  	
+ 	  	<mx:Label text=" Subject      " fontSize="10" fontWeight="bold" width="70"/>
+		<mx:ComboBox id="typeCB" selectedIndex="0" >
+			      <mx:ArrayCollection>
+			         <mx:Object label="Ask a question" />
+			         <mx:Object label="Report a problem"/>
+			         <mx:Object label="Make a suggestion" />
+				     <mx:Object label="School program" />
+			      </mx:ArrayCollection>
+			</mx:ComboBox>
+ 	 	</mx:HBox> 
+
+		<mx:HBox id="emailBox" visible="true" width="90%" verticalAlign="middle">
+				<mx:Label text=" Email" fontSize="10" fontWeight="bold" width="70"/>
+				<mx:TextInput id="emailTI" text="{emailAdd}" width="180" fontWeight="bold" fontSize="10" alpha="0.7"/>
+			
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalAlign="center" verticalAlign="middle">
+			<mx:VBox verticalGap="0" horizontalAlign="center">				
+				<mx:RadioButtonGroup id="memberRBG"/>
+					<mx:Label text="Member" fontWeight="bold"/>
+					<mx:HBox>
+						<mx:RadioButton label="Yes" groupName="memberRBG" click="clickMember('yes')"/>
+						<mx:RadioButton id="noRB" label="No" groupName="memberRBG" selected="true" click="clickMember('no')"/>
+					</mx:HBox>
+			</mx:VBox>
+			<mx:Label text="Username" fontSize="10" fontWeight="bold" id="userNameLb"/>
+			<mx:TextInput id="UsernameTI"  width="86" editable="true" enabled="true" fontWeight="bold" alpha="0.7"/>
+		</mx:HBox>
+		
+		<mx:HBox width="90%"  horizontalAlign="center" height="120">
+		<mx:TextArea width="97%" height="100%" id="messageTA" fontSize="12" fontWeight="bold" alpha="0.7"/>			
+		</mx:HBox>
+		<mx:HBox width="90%" horizontalAlign="center" verticalAlign="middle">
+			<mx:Button id="clearBut"  label="Clear" click="clickClear()" fillAlphas="[1.0, 1.0]" fillColors="[#E2D32B, #D6C003]" fontSize="16" fontWeight="bold" color="#FFFFFF"/>
+			<mx:Button  click="clickSubmit()" label="Submit" icon="@Embed(source='../assets/images/email_go.png')" fillAlphas="[1.0, 1.0]" fillColors="[#E2D32B, #D6C003]" fontSize="16" fontWeight="bold" color="#FFFFFF" />
+		</mx:HBox>	
+		
+		<mx:VBox verticalGap="0" width="290" horizontalAlign="center" height="75" paddingBottom="0" paddingTop="0">
+			<mx:Label text="Note - email providers such as Yahoo may" fontWeight="bold" color="#FFFFFF"/>
+			<mx:Label text="route our reply to your Spam folder. Please" fontWeight="bold" color="#FFFFFF"/>
+			<mx:Label text=" check it if you have not received a reply" fontWeight="bold" color="#FFFFFF"/>
+			<mx:Label text="within 24 hours." fontWeight="bold" color="#FFFFFF"/>
+			
+		</mx:VBox>
+	
+	</mx:VBox>
+	
+
+	
+   	<mx:HTTPService
+		id="svcContactUs"  
+		url="{baseURL}contactUs"
+		resultFormat="e4x"	
+		method="POST"
+		showBusyCursor="true"
+		result="contactUsResult(event)"
+		fault="contactUsFault(event)" >
+		</mx:HTTPService>	
+	
+
+<mx:Script> <![CDATA[
+	import mx.rpc.events.ResultEvent;
+	import mx.rpc.events.FaultEvent;
+	import mx.controls.Alert;
+	import mx.core.UIComponent;
+    import mx.events.CloseEvent;
+
+	[Bindable]
+	public var emailAdd:String
+	[Bindable]
+	private var baseURL:String			
+	private function init() {
+				
+			// if loaded app from hostgator then initalize the base URL
+			if (  svcContactUs.rootURL.indexOf("mathspert") > 0 ) {
+				Globals.baseURL = "projectM/public/"		// when running at hostgator
+				Globals.rootURL = "http://www.mathspert.com"				
+			}
+			else {			
+				Globals.baseURL = "/"				// when running local
+				Globals.rootURL = "http://localhost:3000/bin"
+			}	
+			
+			baseURL = Globals.baseURL
+			clickClear()	
+			addImage()
+	}
+	
+	private function clickSubmit():void {
+		
+		if ( messageTA.text.length == 0 ) {
+   			Alert.show("Please enter a message", "", Alert.OK, this, clearEmailMsgAlert );
+   			messageTA.setFocus()
+			return 				
+		} 
+		
+		if ( emailTI.text.length == 0 || emailTI.text.indexOf( "@" ) <0  || 
+					emailTI.text.indexOf( "." ) <0 ) {
+			Alert.show("Please enter a valid email address", "", Alert.OK,  this, clearEmailAddressAlert);
+			emailTI.setFocus()
+			return 	
+		}
+
+		if ( UsernameTI.visible && UsernameTI.length == 0 ) {
+			Alert.show("Please enter a valid Username", "", Alert.OK,  this, clearEmailAddressAlert);
+			emailTI.setFocus()
+			return 	
+		}
+		
+		var firstName:String="Guest"
+		if ( UsernameTI.length != 0 ) firstName= UsernameTI.text
+				
+		svcContactUs.send( { contactType:typeCB.selectedLabel, 
+							 msg:messageTA.text,
+							 email:emailTI.text, 
+							 source_program:"Login:" + GetInTouchVersion.version,
+							 first_name :firstName,
+							 last_name: "",
+							 login:UsernameTI.text } )
+	}
+	
+	private function clearEmailMsgAlert( eventObj:CloseEvent ):void {
+		messageTA.setFocus()
+	}
+	private function clearEmailAddressAlert( eventObj:CloseEvent ):void {
+		emailTI.setFocus()
+	}
+	
+	private function clickClear():void {
+		messageTA.text=""
+		emailTI.text = ""
+		UsernameTI.text=""
+		UsernameTI.visible=false 
+		userNameLb.visible=false
+		noRB.selected =  true
+	}
+	
+	private function clickMember( but:String):void {
+		if ( but == "yes"  ) {
+			UsernameTI.visible=true
+			userNameLb.visible=true
+		} else {
+			UsernameTI.text = ""
+			UsernameTI.visible=false
+			userNameLb.visible=false			
+		}
+	}
+	private function contactUsResult(event:ResultEvent):void {
+		
+		var result:XML = XML(event.result);
+
+		if ( result.status == "FAIL" ) {
+			Alert.show( result.error, "Error");	
+		} else {			
+			Alert.show( "Message has been sent. Watch your email for a reply.", "");			
+			dispatchEvent(  new Event( "CLOSE" ) )
+			messageTA.text=""
+		}			
+	}
+
+	private function contactUsFault(event:FaultEvent):void {
+		Alert.show( "Please try again.", "Error");	
+			
+	}	 
+
+    // Flex 3 cookbook By Joshua Noble, Todd Anderson http://books.google.com/books?id=7fbhB_GlQEAC&pg=PA106&lpg=PA106&dq=set+background+image+of+flex+hbox&source=bl&ots=HU-gakqGYD&sig=Hrwjwzj6iubCQS8bV6qZV3nUN1s&hl=en&ei=HTDiSt7SKtHDlAe0p9mKBw&sa=X&oi=book_result&ct=result&resnum=4&ved=0CBYQ6AEwAw#v=onepage&q=&f=true
+     //
+     // Give the widget rounded corners
+     import flash.net.URLRequest
+     import flash.display.Loader
+     private var loader:Loader
+     
+     private function addImage():void {
+     	loader = new Loader()
+     	loader.contentLoaderInfo.addEventListener( Event.COMPLETE, completeLoad )
+     	loader.load( new URLRequest( Globals.rootURL + "/images/j-login-box-yellow.png" ) )    
+     }
+     
+     private function completeLoad( e:Event ):void {
+     	var bm:BitmapData = new BitmapData( loader.width, loader.height, true, 0x000000 )
+     	bm.draw( loader )
+     	var m:Matrix = new Matrix()
+     	m.createBox( this.width/loader.width, this.height/loader.height )
+     	this.graphics.beginBitmapFill( bm, m, true, true )
+     	this.graphics.drawRoundRectComplex( 0,0, this.width, this.height, 10, 10, 10, 10 )
+     	this.graphics.endFill()
+     }	
+		
+	
+]]>	</mx:Script>	
+
+</mx:Application>

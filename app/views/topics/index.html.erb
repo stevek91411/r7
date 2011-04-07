@@ -1,0 +1,38 @@
+<h1>Listing topics</h1>
+
+<table>
+  <tr>
+    <th>Topicid</th>
+    <th>Noofproblems</th>
+    <th>Noofrows</th>
+    <th>Noofcols</th>
+    <th>Displaylabel</th>
+    <th>Fulldesciption</th>
+    <th>Problemgeneratorclass</th>
+    <th>Parameters</th>
+    <th>Maxtimeinsec</th>
+    <th>Problemviewctlclass</th>
+  </tr>
+
+<% for topic in @topics %>
+  <tr>
+    <td><%=h topic.topicId %></td>
+    <td><%=h topic.noOfProblems %></td>
+    <td><%=h topic.noOfRows %></td>
+    <td><%=h topic.noOfCols %></td>
+    <td><%=h topic.displayLabel %></td>
+    <td><%=h topic.fullDesciption %></td>
+    <td><%=h topic.problemGeneratorClass %></td>
+    <td><%=h topic.parameters %></td>
+    <td><%=h topic.maxTimeInSec %></td>
+    <td><%=h topic.problemViewCtlClass %></td>
+    <td><%= link_to 'Show', topic %></td>
+    <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+    <td><%= link_to 'Destroy', topic, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New topic', new_topic_path %>

@@ -1,0 +1,63 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+ 
+jareth:
+  id: 4
+  login: jareth
+  email: jareth@projectM.com
+  first_name: jareth
+  last_name: kirkham
+  gender: Male
+  parent_id: 6
+  grade: 1
+  class_id: Grade 1
+  status: active
+  dob: <%= 8.years.ago.to_s :db %>
+  first_registered: <%= 12.days.ago.to_s :db %>
+  school_id: RECS Elementry
+  
+cielito:
+  id: 9
+  login: cielito
+  email: cielito@projectM.com
+  first_name: cielito
+  last_name: kirkham
+  gender: Male
+  parent_id: 6
+  grade: 1
+  class_id: Grade 1
+  status: active
+  dob: <%= 8.years.ago.to_s :db %>
+  first_registered: <%= 12.days.ago.to_s :db %>
+  school_id: RECS Elementry
+ 
+riley:
+  id: 5
+  login: riley
+  email: jiley@pomodo.com
+  first_name: riley
+  last_name: kirkham
+  gender: Male
+  parent_id: 8
+  grade: 2
+  class_id: Grade 2
+  status: active
+  dob: <%= 100.days.ago.to_s :db %>
+  first_registered: <%= 10.years.ago.to_s :db %>
+  school_id: RECS Elementry
+  
+molly:
+  id: 14
+  login: molly
+  email: molly@pomodo.com
+  first_name: Molly
+  last_name: kirkham
+  gender: Male
+  parent_id: 8
+  grade: 1
+  class_id: Grade 1
+  status: active
+  dob: <%= 100.days.ago.to_s :db %>
+  first_registered: <%= 10.years.ago.to_s :db %>
+  school_id: louisville
+  

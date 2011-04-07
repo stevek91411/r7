@@ -1,0 +1,28 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# one:
+#   column: value
+#
+# two:
+#   column: value
+
+one:
+  school_id: RECS Elementry
+  class_id: Grade 1
+  grade: 1
+ 
+two:
+  school_id: RECS Elementry
+  grade: 2
+  class_id: Grade 2
+  
+three:
+  school_id: louisville
+  grade: 1
+  class_id: Grade 1 
+  
+four:
+  school_id: louisville
+  grade: 2
+  class_id: Grade 2
+  

@@ -1,0 +1,18 @@
+<h1>Listing student_assignments</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for student_assignments in @student_assignments %>
+  <tr>
+    <td><%= link_to 'Show', student_assignments %></td>
+    <td><%= link_to 'Edit', edit_student_assignments_path(student_assignments) %></td>
+    <td><%= link_to 'Destroy', student_assignments, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New student_assignments', new_student_assignments_path %>

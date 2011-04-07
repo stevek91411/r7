@@ -1,0 +1,32 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+stephen:
+  id: 6
+  login: stephen
+  email: stevek91411@yahoo.com
+  first_name: stephen
+  last_name: kirkham
+  max_no_of_active_students: 2
+  first_registered: <%= 30.days.ago.to_s :db %>
+  last_payment: <%= 30.days.ago.to_s :db %>
+  membership_expires: "2010-05-23"
+  payment_amount:  25
+  payment_plan: "family"
+  discount_code: bell
+  
+kevin:
+  id: 8
+  login: kevin
+  email: kevin@yahoo.com
+  first_name: kevin
+  last_name: kirkham
+  max_no_of_active_students: 2
+  first_registered: <%= 30.days.ago.to_s :db %>
+  last_payment: <%= 30.days.ago.to_s :db %>
+  membership_expires: "2010-05-23"
+  payment_amount:  25
+  payment_plan: "family"
+  
+
+  
+  

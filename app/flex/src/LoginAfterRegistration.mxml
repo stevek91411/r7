@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	 horizontalAlign="center" verticalAlign="bottom"
+	xmlns:custom="*"
+	height="185" width="270" 
+	backgroundAlpha="0"	  
+	 verticalScrollPolicy="off" 
+	initialize="initVars()" 	
+ 		layout="absolute">
+	  
+ 
+	<mx:HTTPService
+		id="svcAccountLogin"
+		url="dummy serivce"
+		resultFormat="e4x"
+		method="POST"
+		/>
+		
+
+	<mx:HBox  id="mainBox" creationComplete="addImage()" 	cornerRadius="10" 
+	     horizontalAlign="center" 
+	  verticalAlign="middle" horizontalGap="0"  x="8" y="-3">
+		<custom:signIn  programID="{programID}" horizontalAlign="center" borderStyle="none" 
+			 verticalScrollPolicy="off" verticalAlign="middle" width="250" x="5" y="0"/>
+	</mx:HBox>
+	
+	<mx:Script><![CDATA[
+     // Declare bindable properties in Application scope.
+     [Bindable]
+     public var rootURL:String;
+    
+     [Bindable]
+     public var programID : String="LoginAfterRegistration"; 
+      
+     // Assign values to new properties.
+     private function initVars():void {
+     	
+     	// if loaded app from hostgator then initalize the base URL
+		if (  svcAccountLogin.rootURL.indexOf("mathspert") > 0 ) {
+			Globals.baseURL = "projectM/public/"		// when running at hostgator
+			Globals.rootURL = "http://www.mathspert.com"				
+		}
+		else {			
+			Globals.baseURL = "/"				// when running local
+			Globals.rootURL = "http://localhost:3000/bin"
+		}	
+		
+     	// get the 'id' of the swf application, the login.swf has 2 nodes
+     	// and 2 values - either Login, LoginAfterRegistration
+     	//
+     	// - in index.htrml - it just allows a person to login
+     	// - in run RegisterSuccess - used when a user pays at paypal, on return to mathspert, Login must complete the initiualization 
+     	//   of thye new account
+     	// programID =   Application.application.id
+       
+     }
+     
+     
+     // Flex 3 cookbook By Joshua Noble, Todd Anderson http://books.google.com/books?id=7fbhB_GlQEAC&pg=PA106&lpg=PA106&dq=set+background+image+of+flex+hbox&source=bl&ots=HU-gakqGYD&sig=Hrwjwzj6iubCQS8bV6qZV3nUN1s&hl=en&ei=HTDiSt7SKtHDlAe0p9mKBw&sa=X&oi=book_result&ct=result&resnum=4&ved=0CBYQ6AEwAw#v=onepage&q=&f=true
+     //
+     // Give the widget rounded corners
+     import flash.net.URLRequest
+     import flash.display.Loader
+     private var loader:Loader
+     
+     private function addImage():void {
+     	loader = new Loader()
+     	loader.contentLoaderInfo.addEventListener( Event.COMPLETE, completeLoad )
+     	loader.load( new URLRequest( Globals.rootURL + "/images/j-login-box-blueFlat.png" ) )    	
+  	
+     }
+     
+     private function completeLoad( e:Event ):void {
+     	var bm:BitmapData = new BitmapData( loader.width, loader.height, true, 0x000000 )
+     	bm.draw( loader )
+     	var m:Matrix = new Matrix()
+     	m.createBox( this.width/loader.width, this.height/loader.height )
+     	this.graphics.beginBitmapFill( bm, m, true, true )
+     	this.graphics.drawRoundRectComplex( 0,0, this.width, this.height, 10, 10, 10, 10 )
+     	this.graphics.endFill()
+     }
+  ]]></mx:Script>
+
+</mx:Application> 

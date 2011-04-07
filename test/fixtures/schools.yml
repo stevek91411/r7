@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  school_id: RECS Elementry			
+  contact: Mary Jane
+  email: mary_School1.School1.com
+  telephone_home: 123
+  telephone_cell:  345
+  status:  active
+  login_prefix : REC
+
+two:
+  school_id: louisville			
+  contact: Mary Jane
+  email: mary_School1.louisville.com
+  telephone_home: 3466
+  telephone_cell:  990
+  status:  active
+  login_prefix : lous
+
+#
+# two:
+#   column: value

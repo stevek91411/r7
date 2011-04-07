@@ -1,0 +1,34 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+#one:
+#  id: 1
+#  commision: 20
+#  commision_type: parent
+#  commision_cents: 300
+#  agent_payment_method: cheque
+#  agent_name: agent name
+#  party_status: firstMonth
+#  party_payment_date: <%= 1.days.ago.to_s :db %>
+#  party_id: 6
+#  party_login: stephen
+#  party_name: stephen kirkham 
+#  party_payment_amount: 25    
+#  parent_membership_expires: <%= 1.year.from_now.to_s :db %>
+#  parent_first_month_expires: <%= 1.month.from_now.to_s :db %>
+#  
+#two:
+#  id: 12
+#  commision: 30
+#  commision_type: parent
+#  commision_cents: 200
+#  agent_name: agent name
+#  agent_payment_method: cheque
+#  party_status: toPay
+#  party_payment_date: <%= 30.days.ago.to_s :db %>
+#  party_id: 6
+#  party_login: Joe
+#  party_name: Joe SMith 
+#  party_payment_amount: 30    
+#  parent_membership_expires: <%= 1.year.from_now.to_s :db %>
+#  parent_first_month_expires: <%= 1.day.ago.to_s :db %>
+  

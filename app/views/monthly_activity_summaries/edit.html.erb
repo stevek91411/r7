@@ -1,0 +1,12 @@
+<h1>Editing monthly_activity_summary</h1>
+
+<%= error_messages_for :monthly_activity_summary %>
+
+<% form_for(@monthly_activity_summary) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @monthly_activity_summary %> |
+<%= link_to 'Back', monthly_activity_summaries_path %>

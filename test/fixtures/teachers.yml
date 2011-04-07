@@ -1,0 +1,36 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 11
+  login: teach1
+  email: stevek91411@yahoo.com
+  first_name: John
+  last_name: Smith
+  school_id: RECS Elementry
+  class_id: Grade 1
+  admin: yes
+  first_registered: <%= 12.days.ago.to_s :db %>
+
+two:
+  id: 12
+  login: teach2
+  email: stevek91411@yahoo.com
+  first_name: Mary
+  last_name: Hope
+  school_id: RECS Elementry
+  class_id: Grade 2
+  admin: yes
+  first_registered: <%= 12.days.ago.to_s :db %>
+  
+three:
+  id: 13
+  login: teach3
+  email: stevek91411@yahoo.com
+  first_name: joe
+  last_name: James
+  school_id: louisville
+  class_id: Grade 2
+  admin: yes
+  first_registered: <%= 12.days.ago.to_s :db %>
+  
+

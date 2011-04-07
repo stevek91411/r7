@@ -1,0 +1,62 @@
+<h1>Editing topic</h1>
+
+<%= error_messages_for :topic %>
+
+<% form_for(@topic) do |f| %>
+  <p>
+    <b>Topicid</b><br />
+    <%= f.text_field :topicId %>
+  </p>
+
+  <p>
+    <b>Noofproblems</b><br />
+    <%= f.text_field :noOfProblems %>
+  </p>
+
+  <p>
+    <b>Noofrows</b><br />
+    <%= f.text_field :noOfRows %>
+  </p>
+
+  <p>
+    <b>Noofcols</b><br />
+    <%= f.text_field :noOfCols %>
+  </p>
+
+  <p>
+    <b>Displaylabel</b><br />
+    <%= f.text_field :displayLabel %>
+  </p>
+
+  <p>
+    <b>Fulldesciption</b><br />
+    <%= f.text_field :fullDesciption %>
+  </p>
+
+  <p>
+    <b>Problemgeneratorclass</b><br />
+    <%= f.text_field :problemGeneratorClass %>
+  </p>
+
+  <p>
+    <b>Parameters</b><br />
+    <%= f.text_field :parameters %>
+  </p>
+
+  <p>
+    <b>Maxtimeinsec</b><br />
+    <%= f.text_field :maxTimeInSec %>
+  </p>
+
+  <p>
+    <b>Problemviewctlclass</b><br />
+    <%= f.text_field :problemViewCtlClass %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @topic %> |
+<%= link_to 'Back', topics_path %>

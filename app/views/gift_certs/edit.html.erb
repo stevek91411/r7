@@ -1,0 +1,12 @@
+<h1>Editing gift_cert</h1>
+
+<%= error_messages_for :gift_cert %>
+
+<% form_for(@gift_cert) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @gift_cert %> |
+<%= link_to 'Back', gift_certs_path %>

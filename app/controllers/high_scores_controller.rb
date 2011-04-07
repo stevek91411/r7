@@ -5,18 +5,28 @@ class HighScoresController < ApplicationController
     @high_scores = HighScore.all
 
     respond_to do |format|
-      format.html # index.html.erb
+    #  format.html # index.html.erb
       format.xml  { render :xml => @high_scores }
     end
   end
 
+ def test
+    @high_scores = HighScore.all
+
+    respond_to do |format|
+      format.html { render :xml => @high_scores }
+      format.xml  { render :xml => @high_scores }
+    end
+  end
+  
+  
   # GET /high_scores/1
   # GET /high_scores/1.xml
   def show
-    @high_score = HighScore.find(params[:id])
+    @high_score = HighScore.find('1')
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { render :xml => @high_score }
       format.xml  { render :xml => @high_score }
     end
   end

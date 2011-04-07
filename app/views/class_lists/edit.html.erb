@@ -1,0 +1,12 @@
+<h1>Editing class_list</h1>
+
+<%= error_messages_for :class_list %>
+
+<% form_for(@class_list) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @class_list %> |
+<%= link_to 'Back', class_lists_path %>

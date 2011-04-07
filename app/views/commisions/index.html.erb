@@ -1,0 +1,18 @@
+<h1>Listing commisions</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for commision in @commisions %>
+  <tr>
+    <td><%= link_to 'Show', commision %></td>
+    <td><%= link_to 'Edit', edit_commision_path(commision) %></td>
+    <td><%= link_to 'Destroy', commision, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New commision', new_commision_path %>

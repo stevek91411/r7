@@ -1,0 +1,112 @@
+	
+jareth:
+  id: 4
+  login: jareth
+  user_type: student
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>
+  
+riley:
+  id: 5
+  login: riley
+  user_type: student
+  status: active
+  membership_expires: "2011-05-23"
+  salt: 945da846ec9a4f29c10e21789bfb213d62f8fee5
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>
+ 
+stephen:
+  id: 6
+  login: stephen
+  user_type: parent
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password:  foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>
+  
+admin:
+  id: 7
+  login: admin
+  user_type: admin-mx
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+ 
+  
+kevin:
+  id: 8
+  login: kevin
+  user_type: parent
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password:  foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>
+  
+cielito:
+  id: 9
+  login: cielito
+  user_type: student
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>  
+  
+agent:
+  id: 10
+  login: bell
+  user_type: agent
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>      
+  
+teacher:
+  id: 11
+  login: teach1
+  user_type: teacher-tx
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>      
+  
+teach2:
+  id: 12
+  login: teach2
+  user_type: teacher-tx
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>   
+  
+teach3:
+  id: 13
+  login: teach3
+  user_type: teacher-tx
+  status: active
+  membership_expires: "2011-05-23"
+  salt: cf1bc466e9dedd7d687e967ba37947971d44ab6e
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>  
+  
+molly:
+  id: 14
+  login: molly
+  user_type: student
+  status: active
+  membership_expires: "2011-05-23"
+  salt: 945da846ec9a4f29c10e21789bfb213d62f8fee5
+  crypted_password: foooo #  fc3f2237b0edbeab2c08eecbc7bd6ef9b2124080
+  created_at: <%= 1.days.ago.to_s :db %>
+    
+  

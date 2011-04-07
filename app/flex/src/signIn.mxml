@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<mx:VBox  xmlns:mx="http://www.adobe.com/2006/mxml" 
+	   cornerRadius="10"  	
+	   verticalAlign="middle"   horizontalAlign="center"
+	   verticalGap="0"	 
+	   creationComplete="init()"  xmlns:ns1="*"    width="230" height="183"> 
+	  			       	
+    <mx:states>  
+        <mx:State name="error">
+            <mx:SetProperty target="{loginBox}" name="height" value="150"/>
+            <mx:AddChild relativeTo="{loginBox}" position="lastChild">
+                <mx:TextArea id="errorLb" text="Invalid UserName and password" width="200" fontSize="10" fontWeight="bold" height="50" backgroundColor="#F5E173" cornerRadius="10"/>
+            </mx:AddChild>
+            <mx:AddChild relativeTo="{loginBox}" position="lastChild">
+                <mx:Button label="Try Again" click="tryAgain()" enabled="true"
+                	themeColor="#EE9F6F" 
+						fillAlphas="[1.0, 1.0]" fillColors="[#96E4F7, #334EF3]" color="#F6FBFC" />
+            </mx:AddChild>
+            <mx:RemoveChild target="{forgotPasswordBox}"/>
+            
+            <mx:RemoveChild target="{LoginButspacer}"/>
+            <mx:RemoveChild target="{loginBut}"/>
+            <mx:RemoveChild target="{rememberMeCB}"/>
+            <mx:SetProperty target="{loginView}" name="width" value="240"/>
+            <mx:SetStyle target="{loginView}" name="verticalGap" value="2"/>
+            <mx:SetProperty name="width" value="250"/>
+            <mx:SetProperty name="height" value="165"/>
+            <mx:SetStyle target="{loginBox}" name="verticalGap" value="4"/>
+            <mx:RemoveChild target="{forgotBut}"/>
+            <mx:RemoveChild target="{label1}"/>
+            <mx:RemoveChild target="{hbox1}"/>
+            <mx:SetProperty target="{loginBox}" name="width" value="220"/>
+            <mx:SetProperty target="{loginView}" name="height" value="160"/>
+            <mx:SetStyle target="{loginView}" name="verticalAlign" value="middle"/>
+        </mx:State>
+        <mx:State name="forgotPassword">
+            <mx:RemoveChild target="{loginBox}"/>           
+            <mx:SetProperty target="{forgotPasswordBox}" name="width"/>
+            <mx:SetProperty target="{forgotPasswordBox}" name="height"/>
+            <mx:RemoveChild target="{forgotBut}"/>
+            <mx:AddChild relativeTo="{forgotPasswordBox}" position="lastChild">
+                <ns1:ForgottenPassword id="ForgottenPasswordForm"  backgroundAlpha="0.0" width="245" height="170">
+                </ns1:ForgottenPassword>
+            </mx:AddChild>
+            <mx:SetProperty name="width" value="250"/>
+            <mx:SetProperty target="{loginView}" name="width"/>
+            <mx:SetStyle target="{forgotPasswordBox}" name="verticalGap" value="0"/>
+        </mx:State>
+    </mx:states>
+    
+ <!-- Define Transition array with one Transition object.-->
+    <mx:transitions>
+              
+  <!-- A transition for changing from any state for forgot password. -->
+        <mx:Transition id="myTransition2" fromState="" toState="forgotPassword">
+            <!-- Define a Parallel effect as the top-level effect.-->
+            <mx:Parallel id="t2" targets="{[forgotPasswordBox, loginBox]}">
+                <!-- Define a Move and Resize effect.-->
+                <mx:Resize duration="600"/>
+            </mx:Parallel>
+        </mx:Transition>
+
+		<mx:Transition id="myTransition3" fromState="" toState="error">
+            <!-- Define a Parallel effect as the top-level effect.-->
+            <mx:Parallel id="t3" targets="{[loginBox]}">
+                <!-- Define a Move and Resize effect.-->
+                <mx:Resize duration="600"/>
+            </mx:Parallel>
+        </mx:Transition>  
+
+		<mx:Transition id="myTransition5" fromState="error" toState="">
+            <!-- Define a Parallel effect as the top-level effect.-->
+            <mx:Parallel id="t5" targets="{[loginBox]}">
+                <!-- Define a Move and Resize effect.-->
+                <mx:Resize duration="400"/>
+            </mx:Parallel>
+        </mx:Transition>
+                     
+        <!-- A transition for changing from any state to any state. -->
+        <mx:Transition id="myTransition4" fromState="forgotPassword" toState="">
+            <!-- Define a Parallel effect as the top-level effect.-->
+            <mx:Parallel id="t4" targets="{[forgotPasswordBox, loginBox]}">
+                <!-- Define a Move and Resize effect.-->
+                <mx:Resize duration="400"/>
+            </mx:Parallel>
+        </mx:Transition>                
+    </mx:transitions>
+
+
+		<mx:VBox id="loginView" horizontalAlign="center"  paddingLeft="0" paddingRight="0" verticalGap="3" cornerRadius="10">			
+			<mx:VBox id="loginBox" width="100%"   horizontalAlign="center"  cornerRadius="10" 
+				verticalGap="0" backgroundAlpha="0.0">	
+					<mx:HBox id="hbox1">
+						<mx:Label text="        " toolTip="Ver: {LoginVersion.version}" id="label1"/>
+					</mx:HBox>
+					<mx:TextInput id="userNameTI"  enter="{setTextInputFocus(passwordTI)}"
+						click="clearTextToEnter(userNameTI, 'Username' )"
+						focusOut="resetTextOnExit(userNameTI, 'Username' )" borderStyle="inset" 
+						borderColor="#F9E1E1" cornerRadius="5" alpha="0.3" themeColor="#FFFFFF" text="Username" backgroundColor="#FFFFFF" fontSize="12" fontWeight="bold"/>
+					<mx:Spacer width="5"/>
+		
+					<mx:TextInput id="passwordTI" enter="login()"
+						focusIn="clearTextToEnter(passwordTI, 'Password' )" 
+						focusOut="resetTextOnExit(passwordTI, 'Password' )" alpha="0.3" cornerRadius="5"  text="Password" displayAsPassword="false" borderColor="#F4C3C2" backgroundColor="#FFFFFF" fontSize="12" fontWeight="bold"/>
+					<mx:Spacer width="5"/>
+					<mx:CheckBox label="Remember me" fontWeight="bold" id="rememberMeCB" click="rememberMe()" />
+				<mx:LinkButton   id="forgotBut" label="Forgot Username or Password"
+						click="clickForgotPassword()"  themeColor="#EE9F6F"   textDecoration="underline" fontStyle="normal" fontSize="12"/>							
+				<mx:Spacer height="24" id="LoginButspacer"/>
+					<mx:Button  label="Login"
+						click="login( )"  id="loginBut" themeColor="#EE9F6F" 
+						fillAlphas="[1.0, 1.0]" fillColors="[#96E4F7, #334EF3]" color="#F6FBFC" fontSize="16" fontWeight="bold" width="150" height="34" cornerRadius="10" fontStyle="normal" fontFamily="Arial">
+							
+					</mx:Button>
+
+			</mx:VBox>
+			<mx:VBox id="forgotPasswordBox" width="210" horizontalAlign="center" borderThickness="2" borderStyle="none" cornerRadius="10" height="5" verticalAlign="middle" verticalGap="3" paddingLeft="0" paddingRight="0" backgroundAlpha="0.0">
+							
+			</mx:VBox>
+		</mx:VBox>
+
+	<mx:HTTPService
+		id="svcAccountLogin"
+		url="{baseURL}session.xml"
+		resultFormat="e4x"
+		method="POST"
+		showBusyCursor="true"
+		result="handleAccountLoginResult(event)"
+		fault="handleAccountLoginFault(event)"/>
+	
+	
+	<mx:HTTPService
+		id="svcResendActivationCode"
+		url="{baseURL}resendActivationCode"
+		resultFormat="e4x"
+		method="POST"
+		showBusyCursor="true"
+		result="resendActivationCodeResult(event)"
+		fault="resendActivationCodeFault(event)" />
+		
+	<mx:HTTPService
+		id="svcActivateParentAccount"  
+		url="{baseURL}activateParentAccount"
+		resultFormat="e4x"	
+		method="POST"
+		showBusyCursor="true"
+		result="activateAccountResult(event)"
+		fault="activateAccountFault(event)" >
+		</mx:HTTPService>		
+						
+		
+<mx:Script>
+		<![CDATA[
+		import mx.controls.Alert;
+		import mx.rpc.events.ResultEvent;
+		import mx.rpc.events.FaultEvent;
+		import flash.net.navigateToURL;	
+		import mx.managers.PopUpManager;
+		import mx.core.IFlexDisplayObject 	
+    	import mx.formatters.DateFormatter;
+	
+			 
+		[Bindable]
+		private var user:XML		
+		[Bindable]
+		private var grade : String="";
+		[Bindable]
+		private var theActivationCodeTI:String;
+		[Bindable]
+     	public var programID : String = "SignIn"; 				// either Login, LoginAfterRegistration
+							
+		private var popupDialog:IFlexDisplayObject												
+
+		[Bindable]
+		private var baseURL:String		
+
+		// possible values fo user.user_type
+		private var PARENT:String = "parent"
+		private var STUDENT:String = "student"
+		private var ADMIN:String = "admin-mx"
+		private var AGENT:String = "agent"
+		private var TEACHER:String = "teacher-tx"
+		private var registerSharedObjectName:String = "mathspertRegister"	// used for registering parants
+		
+		private function init():void {
+					
+			baseURL = Globals.baseURL
+							   
+			if ( programID == "LoginAfterRegistration" ) {	
+				loginBut.setFocus()		
+				// a user completing a registration, and has just returned from Paypal
+				var myLSO:SharedObject = SharedObject.getLocal( registerSharedObjectName, "/" );
+		  		if ( myLSO.data.status == "pre-enroll" || myLSO.data.status == "trial"	) {
+		  			// status showing that the account was created in trial mode, or new account active the account
+		  			popupActivateAccountAlert()
+					svcActivateParentAccount.send( { username:myLSO.data.userName,
+													 payment_amount:myLSO.data.paymentReceivedAmount,
+					                                 client_date:formatTodayDate()  } )  
+					return			
+		  		}	
+			}	  			
+			
+			// Initialize Local Shared Object.
+		  	myLSO = SharedObject.getLocal("mathspertLogin", "/" );
+	
+  			// Get values from LSO.
+  			if ( myLSO.data.userName != null ) userNameTI.text = myLSO.data.userName
+  			if ( myLSO.data.password != null  ) { 
+  				passwordTI.text = myLSO.data.password
+				passwordTI.displayAsPassword=true
+  			}
+  			if ( myLSO.data.rememberMe == "true" ) rememberMeCB.selected = true
+
+		  
+		  	// setup Alert style	
+		  	var alertCSS:CSSStyleDeclaration = StyleManager.getStyleDeclaration("Alert");
+  			alertCSS.setStyle( "fontSize", "13" )
+        	alertCSS.setStyle( "fontWeight", "bold" ) 	
+        	alertCSS.setStyle( "Weight", "250" ) 	  
+  
+		}
+
+		private  function formatTodayDate():String{
+			var df:DateFormatter = new DateFormatter( )
+			df.formatString="YYYY-MM-DD" 
+			return df.format( new  Date() )   
+		}		
+		
+		private function setTextInputFocus(ti:TextInput ):void {
+		  ti.setFocus()
+		  ti.setSelection(userNameTI.text.length,ti.text.length); 			
+		}
+		
+		
+		private function showCreateAccount():void {	}				
+				
+		
+		private function handleAccountLoginResult(event:ResultEvent):void {
+			
+			loiginAttemptCount = 0
+				
+			var result:Object = event.result;
+			if (result == "badlogin") {
+				currentState="error"	// show error message
+				errorLb.setStyle( "fontSize", "12" )
+				errorLb.text = "Invalid Username and password"
+			} else {
+				user = XML( event.result );
+				rememberMe()			
+
+				var myLSO:SharedObject = SharedObject.getLocal( "loginStartTime", "/" );
+  				myLSO.data.loginStartTime = new Date()
+   				myLSO.flush()
+
+				// if not active or in trail status then show error
+				if ( user.status != "active" && user.status != "trial"  ) {
+					currentState="error"	// show error message
+					errorLb.setStyle( "fontSize", "10" )					
+					errorLb.text = "Invalid Username and password"
+					return			
+				}	  
+																
+				if ( user.user_type == STUDENT ) {		
+											
+					var request:URLRequest = new URLRequest( Globals.rootURL + "/runStudent.html"  );
+					try {
+					navigateToURL(request, "_top");
+					}
+					catch (e:Error) { }     
+				}
+				
+				if ( user.user_type == PARENT ) {	
+					
+					// when a parent logs in reset the email address as it may have changed
+		  			var myLSO:SharedObject = SharedObject.getLocal("mathspertLogin", "/" );
+   					myLSO.data.email = String( user.email )
+   					myLSO.flush()
+   						
+					var request:URLRequest = new URLRequest( Globals.rootURL + "/runParentAdmin.html"  );
+					try {
+					navigateToURL(request, "_top");
+					}
+					catch (e:Error) {
+					}     
+				}
+				
+				if ( user.user_type == ADMIN ) {			
+					var request:URLRequest = new URLRequest( Globals.rootURL + "/runAdmin.html"  );
+					try {
+					navigateToURL(request, "_top");
+					}
+					catch (e:Error) {
+					}     
+				}	
+
+				if ( user.user_type == AGENT ) {			
+					var request:URLRequest = new URLRequest( Globals.rootURL + "/runAgent.html"  );
+					try {
+					navigateToURL(request, "_top");
+					}
+					catch (e:Error) {
+					}     
+				}															     		
+
+				if ( user.user_type == TEACHER ) {			
+					var request:URLRequest = new URLRequest( Globals.rootURL + "/runTeacher.html"  );
+					try {
+					navigateToURL(request, "_top");
+					}
+					catch (e:Error) {
+					}     
+				}	
+			}
+		}  
+			
+		private function handleAccountLoginFault(event:FaultEvent):void {
+			
+			if ( loiginAttemptCount < 3 ) {
+				login()
+				return
+			}
+
+			loiginAttemptCount = 0
+			currentState="error"	// show error message
+			errorLb.setStyle( "fontSize", "12" )
+			errorLb.text = "Unable to log in.";					
+		}  		
+		
+		private function clearTextToEnter( textInput:mx.controls.TextInput, 
+										   defaultValue:String ):void {
+			if ( textInput.text == defaultValue  ) 
+				textInput.text="";
+				
+				if ( defaultValue == "Password"  ) {
+				    passwordTI.displayAsPassword=true
+				}
+				    
+		}
+		
+		private function resetTextOnExit( value:mx.controls.TextInput, 
+										   resetValue:String ):void {
+			if ( value.text == ""  ) {
+				value.text=resetValue;
+			
+				if ( resetValue == "Password" ) 
+				    passwordTI.displayAsPassword=false	
+			}		  
+		}
+		
+		private var loiginAttemptCount:int  = 0 
+		private function login( ):void {
+			
+			userNameTI.enabled=false
+			userNameTI.editable=false
+			userNameTI.focusEnabled=false
+			userNameTI.focusEnabled=false
+
+			passwordTI.enabled=false
+			passwordTI.editable=false				
+			loginBut.enabled=false
+			loginBut.focusEnabled=false
+
+	  		var myLSO:SharedObject = SharedObject.getLocal("mathspertDemoLogin", "/" );
+			
+			if ( userNameTI.text == "student" && Globals.isRunningLocal ) {
+				// demo login, used for maribel to demo matrhspert with no internet connect 
+				// Initialize Local Shared Object for the demo login logins
+	  			myLSO.data.userName = userNameTI.text 
+				myLSO.flush()	
+				var request:URLRequest = new URLRequest(  "runStudent.html"  );
+
+				try {
+					navigateToURL(request, "_top");
+					}
+					catch (e:Error) { }
+					return
+			}
+			if ( userNameTI.text == "teacher" && Globals.isRunningLocal ) {
+				// demo login, used for maribel to demo matrhspert with no internet connect 
+				// Initialize Local Shared Object for the demo login logins
+	  			myLSO.data.userName = userNameTI.text 
+				myLSO.flush()	
+				var request:URLRequest = new URLRequest(  "runTeacher.html"  );
+
+				try {
+					navigateToURL(request, "_top");
+					}
+					catch (e:Error) { }
+					return
+			}
+			
+			myLSO.clear()	// remove the demo cookie
+			myLSO.flush()
+			loiginAttemptCount++	
+			svcAccountLogin.send({login: userNameTI.text, password: passwordTI.text});							
+		}
+
+		public function rememberMe():void {
+			var myLSO:SharedObject = SharedObject.getLocal("mathspertLogin", "/" );
+			if ( rememberMeCB.selected ) {
+  				// Get value from LSO.
+  				myLSO.data.userName = userNameTI.text 
+  				myLSO.data.password = passwordTI.text 	
+  				myLSO.data.rememberMe = "true" 
+  				myLSO.flush();	
+			}
+			
+			if ( !rememberMeCB.selected ) {
+				// clear the LSO
+  				myLSO.clear()
+  				myLSO.flush()  	
+			}	
+		}
+	
+	
+		private function tryAgain(  ):void {
+			currentState=""
+			userNameTI.enabled=true
+			userNameTI.editable=true
+			userNameTI.focusEnabled=true
+
+			passwordTI.enabled=true
+			passwordTI.editable=true
+			loginBut.enabled=true
+			userNameTI.setFocus()
+		}
+					
+
+		private function clickCancelActivateAccount():void{
+			currentState=""	
+			passwordTI.enabled = true
+			passwordTI.editable = true
+			userNameTI.enabled = true
+			userNameTI.editable = true
+			rememberMeCB.enabled = true
+			loginBut.enabled=true
+		}
+
+
+//----------------------------------------------------------------------------
+	private function clickActivateAccount():void {
+		// svcActivateAccount.send( {id:user.id, activationCode:ActivationCodeTI.text } )
+	}
+	
+	private function activateAccountResult(event:ResultEvent):void {
+		
+		var result:XML = XML(event.result);
+
+		if ( result.status == "FAIL" ) {
+			Alert.show( result.error, "Error with activiation");	
+		} else {					
+			closePopup()
+
+			var registerLSO:SharedObject = SharedObject.getLocal( registerSharedObjectName, "/" );
+	  														
+  			userNameTI.text = registerLSO.data.userName
+  			passwordTI.text=registerLSO.data.password
+  			passwordTI.displayAsPassword = true
+  			rememberMeCB.selected = true	
+  			
+			// Initialize Local Shared Object for future logins
+	  		var myLSO:SharedObject = SharedObject.getLocal("mathspertLogin", "/" );
+  			myLSO.data.userName = registerLSO.data.userName
+  			myLSO.data.password = registerLSO.data.password
+   			myLSO.data.email = registerLSO.data.email
+ 			myLSO.data.rememberMe = "true"
+ 
+ 			// remove the cookie so next time the person tries to login he see the normal login process
+			registerLSO.clear()	
+			registerLSO.flush()	
+		}			
+	}
+
+	private function activateAccountFault(event:FaultEvent):void {
+		Alert.show( "Please try again.", "Error");	
+		closePopup()
+			
+	}	 
+	
+	
+	public function popupActivateAccountAlert():void {     
+ 		popupDialog= PopUpManager.createPopUp(this,  ActivateAccountAlert , false); // popup non modal dialog
+    	var ac:ActivateAccountAlert = ActivateAccountAlert( popupDialog )
+   		PopUpManager.centerPopUp( popupDialog )                  						   	         
+	}
+
+
+	private function closePopup(  ):void{
+		if ( popupDialog != null ) {
+			PopUpManager.removePopUp( popupDialog )
+			popupDialog=null	
+		}
+		userNameTI.setFocus()		
+	}
+	
+	
+	private function clickForgotPassword():void {
+		currentState='forgotPassword'
+		ForgottenPasswordForm.addEventListener("CANCEL",returnToBaseState );
+        ForgottenPasswordForm.addEventListener("CLOSE", returnToBaseState );	
+	}
+	
+	
+	private function returnToBaseState( e:Event ) :void {
+		currentState="" 	
+	}
+	
+//-----------------------------------------------------------------------------------------
+	private function clickResendActivationCode(  ):void {
+		svcResendActivationCode.send()
+	}
+	
+	private function resendActivationCodeResult(event:ResultEvent):void {
+  	Alert.show( "Please check your email for the Activation Code", "Success");	  	
+	}
+
+	private function resendActivationCodeFault(event:FaultEvent):void {
+		Alert.show( "Please try again.", "Error");	
+	
+	}	
+	
+
+    ]]>
+	</mx:Script>				
+</mx:VBox>

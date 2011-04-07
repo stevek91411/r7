@@ -1,0 +1,17 @@
+<h1>Editing run_summary</h1>
+
+<%= error_messages_for :run_summary %>
+
+<% form_for(@run_summary) do |f| %>
+  <p>
+    <b>User</b><br />
+    <%= f.text_field :user_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @run_summary %> |
+<%= link_to 'Back', run_summaries_path %>

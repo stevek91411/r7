@@ -1,0 +1,53 @@
+<p>
+  <b>Topicid:</b>
+  <%=h @topic.topicId %>
+</p>
+
+<p>
+  <b>Noofproblems:</b>
+  <%=h @topic.noOfProblems %>
+</p>
+
+<p>
+  <b>Noofrows:</b>
+  <%=h @topic.noOfRows %>
+</p>
+
+<p>
+  <b>Noofcols:</b>
+  <%=h @topic.noOfCols %>
+</p>
+
+<p>
+  <b>Displaylabel:</b>
+  <%=h @topic.displayLabel %>
+</p>
+
+<p>
+  <b>Fulldesciption:</b>
+  <%=h @topic.fullDesciption %>
+</p>
+
+<p>
+  <b>Problemgeneratorclass:</b>
+  <%=h @topic.problemGeneratorClass %>
+</p>
+
+<p>
+  <b>Parameters:</b>
+  <%=h @topic.parameters %>
+</p>
+
+<p>
+  <b>Maxtimeinsec:</b>
+  <%=h @topic.maxTimeInSec %>
+</p>
+
+<p>
+  <b>Problemviewctlclass:</b>
+  <%=h @topic.problemViewCtlClass %>
+</p>
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>

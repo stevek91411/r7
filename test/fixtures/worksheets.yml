@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+One:
+  id: 1
+  name: fractions						   
+  user_id: 11					
+  school_id: RECS Elementry					
+  grade: 1					
+  data: TG-Fractions-Grade1:T-FractionPickShapeFractionsGrade1|TG-Fractions-Grade1:T-FractionShapeFractionsToTenths 		          	 	
+    
+three:
+  id: 3
+  name: LV-fractions						   
+  user_id: 13					
+  school_id: louisville					
+  grade: 1					
+  data: TG-Fractions-Grade1:T-FractionPickShapeFractionsGrade1|TG-Fractions-Grade1:T-FractionShapeFractionsToTenths 

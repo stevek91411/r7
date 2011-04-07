@@ -1,0 +1,8 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+bell:
+  code: bell
+  party_type: agent
+  party_id: 10
+  party_login: bell
+  agent_membership_discount: 10

@@ -1,0 +1,17 @@
+<h1>Editing topic_run_result</h1>
+
+<%= error_messages_for :topic_run_result %>
+
+<% form_for(@topic_run_result) do |f| %>
+  <p>
+    <b>Userid</b><br />
+    <%= f.text_field :userId %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @topic_run_result %> |
+<%= link_to 'Back', topic_run_results_path %>

@@ -1,0 +1,12 @@
+<h1>Editing student_assignments</h1>
+
+<%= error_messages_for :student_assignments %>
+
+<% form_for(@student_assignments) do |f| %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @student_assignments %> |
+<%= link_to 'Back', student_assignments_path %>

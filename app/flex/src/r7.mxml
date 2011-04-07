@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="400" height="400">
+
+
+
+<mx:HTTPService
+		id="svcHighScore"
+		url="/high_scores/1"
+		resultFormat="e4x"
+		method="GET"
+		showBusyCursor="true"
+		result="handleHighScoreResult(event)"
+		fault="handleHighScoreFault(event)"/>
+		
+<mx:Script>
+		<![CDATA[
+		import mx.controls.Alert;
+		import mx.rpc.events.ResultEvent;
+		import mx.rpc.events.FaultEvent;
+		import flash.net.navigateToURL;	
+		import mx.managers.PopUpManager;
+		import mx.core.IFlexDisplayObject 	
+
+
+		private function handleHighScoreResult(event:ResultEvent):void {
+						var result:Object = event.result;
+						ta.text = result.toString()
+			
+		}
+		private function handleHighScoreFault(event:FaultEvent):void {	
+		}  	
+		
+		
+
+    ]]>
+	</mx:Script>	
+	<mx:TextArea id="ta" x="67" y="44" width="300" height="300"/>
+	<mx:Button x="176" y="10" label="get" click="{svcHighScore.send()}"/>
+	
+	
+				
+		
+</mx:Application>
