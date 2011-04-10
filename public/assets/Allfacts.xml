@@ -1,0 +1,153 @@
+<items>
+  <item type="earth" grade="1,2">The Universe is about 14 billion years old. The earth is only 4.6 billion years old.</item>
+  <item type="earth" grade="3,4,5">The Universe is about 14 billion years old. The earth is young in comparison, it is only 4.6 billion years old.</item>
+  <item type="earth" grade="1,2">The earth is the 3rd planet from the sun and is the 5th largest planet in our solar system.</item>
+  <item type="earth" grade="3,4,5,5">The earth is the 3rd planet from the sun and is the 5th largest planet in our solar system. Jupiter is the largest planet.</item>
+  <item type="earth" grade="1,2">About two thirds of the Earth's surface is covered with water.</item>
+  <item type="earth" grade="3,4,5">The Surface Area of the earth is 197 million square miles, about two thirds of the Earth's surface is covered with water.</item>
+  <item type="earth" grade="3,4,5">There are more than 2,700 languages in the world. There are also more than 7,000 dialects. A dialect is a regional language variation with different pronunciation, vocabulary, or meaning.</item>
+  <item type="earth" grade="1,2,3,4,5">There are 195 countries in the world and there are more than 2,700 languages.</item>
+  <item type="earth" grade="1,2">The Population of the Earth is about 6,800,000,000 (6.80 billion) people.</item>
+  <item type="earth" grade="1,2">China has the largest population of any country. It has over 1.3 billion people.</item>
+  <item type="earth" grade="3,4,5">The Population of the Earth is about 6,800,000,000 (6.80 billion). China has the most people, its population is 1.3 billion.</item>
+  <item type="earth" grade="1,2,3,4,5">The city with the largest population is Shanghai in China. It has almost 14 million inhabitants.</item>
+  <item type="earth" grade="1,2">New York is the city with the biggest population in America. It has over 8.3 million inhabitants.</item>
+  <item type="earth" grade="3,4,5">New York is the city with the biggest population in America. It has over 8.3 million inhabitants. Los Angeles is in second place. It has 3.8 million people.</item>
+  <item type="animals" grade="3,4,5">The blue whale is the largest known animal on Earth. Mature blue whales can measure anywhere from 75 feet (23 m) to 100 feet (30.5 m) long and can weigh as much as 150 tons.</item>
+  <item type="animals" grade="1,2, 3,4,5">The blue whale is the largest known animal on Earth. The second largest animal is the Afican elephant.</item>
+  <item type="animals" grade="1,2">The Cheetah is the fastest land animal. Cheetahs can run much faster than people.</item>
+  <item type="animals" grade="3,4,5">The Cheetah is the fastest land animal. It can run at 112 kilometres per hour (70 mph). The average person can run from 12 - 17 miles an hour in sprints, so keep away from cheetahs.</item>
+  <item type="animals" grade="3,4,5">The Spine-tailed Swift is the fastest bird. It can fly at 170 kilometres per hour (105mph). The Peregrine Falcon is the fastest bird that dives headfirst down through the sky. They can travel at up to 200mph.</item>
+  <item type="animals" grade="1,2">The shortfin Mako shark is the fastest fish.</item>
+  <item type="animals" grade="3,4,5">The shortfin Mako shark is the fastest fish, it can swim at 50 kilometres per hour. Olympic gold-medal swimmers could not escape even if they tried, they can only swim at 8 kph (5 mph) .</item>
+  <item type="animals" grade="1,2">The tallest person in the world was Robert Wadlow. He was 2.72 meters ( 8ft 11in ) tall.</item>
+  <item type="animals" grade="1,2">House flies have a lifespan of two weeks.</item>
+  <item type="animals" grade="1,2">On average, Elephants sleep for about 2 hours per day.</item>
+  <item type="animals" grade="1,2">The longest recorded flight of a chicken is thirteen seconds</item>
+  <item type="people" grade="1,2">The tallest woman was Zeng Jinlian. She was 2.48 meters ( 8ft 2in ) tall.</item>
+  <item type="animals" grade="1,2">A shark can hear a fish in the water from more than a mile away.
+
+</item>
+  <item type="animals" grade="3,4,5">The tallest person in the world was Robert Wadlow. He was 2.72 meters ( 8ft 11in ) tall. The tallest woman was Zeng Jinlian. She was 2.48 meters ( 8ft 2in ) tall.</item>
+  <item type="animals" grade="3,4,5">The blue whale can produce sounds up to 188 decibels. This is the loudest sound produced by a living animal and has been detected as far away as 530 miles.</item>
+  <item type="animals" grade="3,4,5">The elephant is distinguished by its high level of intelligence, interesting behavior, methods of communication and complex social structure. </item>
+  <item type="animals" grade="3,4,5">Elephants demonstrate concern for members of their families they take care of weak or injured members and appear to grieve over a dead companion. 
+</item>
+  <item type="animals" grade="1,2">The blue whale can produce the loudest sound of any living animal. The sound can be detected as far away as 530 miles.</item>
+  <item type="animals" grade="3,4,5">Electric eels can stun both predators and prey with electric shocks of around 500 volts.</item>
+  <item type="people" grade="3,4,5">The 1921 Nobel Prize in Physics was won by Albert Einstein for his work in the field of theoretical physics.</item>
+  <item type="people" grade="1,2">The shortest person in the world is Khagendra Thapa Maga. He is 56 cm ( 22 in ) tall.</item>
+  <item type="people" grade="1,2">The shortest woman was Pauline Muster. She was 58 cm ( 23 in ) tall.</item>
+  <item type="people" grade="1,2">The world's oldest person was Kama Chinen. She lived in Japan and died a week before her 115th birthday.</item>
+  <item type="people" grade="3,4,5">Steve Wozniak designed the first Apple computer in 1976. It was known as the Apple I.</item>
+  <item type="people" grade="3,4,5">The world's oldest person was Kama Chinen. She lived in the Japanese island of Okinawa. She died a week before her 115th birthday. She was born on May 10, 1895.</item>
+  <item type="people" grade="3,4,5">Michael Jackson's  1982 Thriller album is the biggest seller of all time. Over 110 millions albums were sold.</item>
+  <item type="people" grade="3,4,5">The shortest person in the world is Khagendra Thapa Maga. He is 56 cm ( 22 in ) tall. The shortest woman was Pauline Muster. She was 58 cm ( 23 in ) tall.</item>
+  <item type="people" grade="1,2, 3,4,5">The world's population grows by over 100 million each year.</item>
+  <item type="events" grade="1,2">On July 20, 1969, Neil Armstrong became the first human to step on the moon.</item>
+  <item type="events" grade="3,4,5">On July 20, 1969, Neil Armstrong became the first human to step on the moon. He, Edwin "Buzz" Aldrin and Michael Collins were the crew of Apollo 11.</item>
+  <item type="events" grade="3,4,5">On 12 April 1961 Yuri Alekseyevich Gagarin, a Soviet cosmonaut , became the first human in outer space and the first to orbit the Earth. He became a hero of the Soviet Union for his pioneering tour in space.</item>
+  <item type="events" grade="3,4,5">The Sputnik 1, launched on October 4, 1957 by Russia, was the first human-made object to orbit the Earth.</item>
+  <item type="events" grade="3,4,5">The launch of the Russian Spiknit 1 spcecraft started the 'space race' between Russia and America. Explorer 1 was the first spacecraft launched by the United States on 31 January 1958.</item>
+  <item type="events" grade="1,2">Mount Everest is the tallest mountain in the world. It is 8850 meters (29035ft) high. </item>
+  <item type="events" grade="3,4,5">Mount Everest is the tallest mountain in the world. It is 8850 meters (29035ft) high. On May 29 1953 Edmund Hillary and Tenzing Norgay were the first to reach the peak.</item>
+  <item type="events" grade="3,4,5">Johannes Gutenberg invented the printing press in 1436 . Gutenberg is also accredited with printing the world's first book known as the Gutenberg Bible.</item>
+  <item type="events" grade="1,2,3,4,5">John Logie Baird was the inventor of the world's first working television system in Hastings, England in 1923. </item>
+  <item type="events" grade="1,2">The creator of the first working light bulb was Joseph Wilson Swan.</item>
+  <item type="events" grade="3,4,5">The creator of the first working light bulb was Joseph Wilson Swan. Thomas Edison improved on Swan's design by using a better incandescent material and a higher vacuum.</item>
+  <item type="events" grade="1,2">The original Olympic Games were a series of athletic competitions held in Ancient Greece.</item>
+  <item type="events" grade="1,2">In the Summer of 1896 the first modern Olympics was held in Athens, Greece. The 2012 Olympics will be held in London.</item>
+  <item type="events" grade="3,4,5">The original Olympic Games were a series of athletic competitions held in Ancient Greece. In the Summer of 1896 the first modern Olympics was held in Athens, Greece. The 2012 Olympics will be held in London.</item>
+  <item type="events" grade="1,2">Alexander Graham Bell is credited with inventing the first telephone in 1876.</item>
+  <item type="events" grade="1,2">By 2008 there were almost 1.3 billion telephone lines in the world.</item>
+  <item type="events" grade="1,2">China has more than 350 million telephones, the most of any other country. The United States is second with 268 million.</item>
+  <item type="events" grade="3,4,5">Alexander Graham Bell is credited with inventing the first telephone in 1876. By 2008 there were almost 1.3 billions land lines in the world. China had more than 350 million phones, more than any other country. </item>
+  <item type="events" grade="1,2">Orville and Wilbur Wright achieved the first flight of an airplane.on the morning of December 17, 1903. </item>
+  <item type="events" grade="3,4,5">Orville and Wilbur Wright achieved the first powered, sustained, and controlled flight of an airplane.on the morning of December 17, 1903. In 1919 the First transatlantic flight was made.</item>
+  <item type="events" grade="3,4,5">In 1932 Amelia Earhart became the first woman to do a solo transatlantic flight. She flew from Harbor Grace, Newfoundland, to Ireland in approximately 15 hr.</item>
+  <item type="naturalEvents" grade="1,2">The biggest earthquake ever recorded occurred in Chile, in 1960. It measured 9.5 on the Richter scale.</item>
+  <item type="naturalEvents" grade="3,4,5">The biggest earthquake ever recorded occurred in Chile, in 1960. Known as the Great Chilean Earthquake, the quake measured 9.5 on the Richter scale.</item>
+  <item type="oddFacts" grade="1, 2">The longest word in a major English dictionary is 'Pneumonoultramicroscopicsilicovolcanoconiosis'.</item>
+  <item type="oddFacts" grade="1,2">  Most people blink about 17,000 times a day. </item>
+  <item type="oddFacts" grade="3,4,5">The longest word in a major English dictionary is 'Pneumonoultramicroscopicsilicovolcanoconiosis'. It is 45 characters long.</item>
+  <item type="oddFacts" grade="1,2">The explosion of Mount Tambora in Indonesia in 1815 has been called the loudest sound ever heard by humans.</item>
+  <item type="oddFacts" grade="3,4,5">The explosion of Mount Tambora, on Sumbawa island, Indonesia in 1815 was heard 2,600 km (1,600 mi) away and has been called the loudest sound ever heard by humans.</item>
+  <item type="oddFacts" grade="3,4,5">The earliest dated printed book is the "Diamond Sutra", printed in China almost 3,000 thousand years ago.</item>
+  <item type="oddFacts" grade="3,4,5">The first letter of every continent's name is the same as the last: AmericA, AntarcticA, EuropE, AsiA, AustraliA, AfricA.
+
+
+
+</item>
+  <item type="oddFacts" grade="3,4,5">The Chinese invented eyeglasses. Marco Polo reported seeing many pairs worn by the Chinese as early as 1275, 500 years before lens griding became an art in the West.
+
+</item>
+  <item type="oddFacts" grade="3,4,5">In 1783 Sebastien Lenormand was first to demonstrate the parachute. In Missouri 1912, Captain Berry was the first to jump from a plane with a parachute.</item>
+  <item type="oddFacts" grade="1,2">There are more than 2,700 languages  in the world.</item>
+  <item type="oddFacts" grade="1,2">More than 1,000 different languages are spoken on the continent of Africa. </item>
+  <item type="oddFacts" grade="3,4,5">There are more than 2,700 languages ( + more than 7,000 dialects) in the world. More than 1,000 different languages are spoken on the continent of Africa. </item>
+  <item type="oddFacts" grade="3,4,5">Microsoft Windows was announced November 10, 1983.</item>
+  <item type="oddFacts" grade="3,4,5">Atari releases Pong, the first commercial video game on November 29, 1972.</item>
+  <item type="oddFacts" grade="3,4,5">The lowest temperature ever recorded world was at Vostok Station, Antarctica on the 21 July 1983. it was a bitter -89.6C</item>
+  <item type="oddFacts" grade="3,4,5">There are 206 bones in the adult human body and are 300 in children. As children age some bones fuse together. </item>
+  <item type="oddFacts" grade="3,4,5">Yuma in the state of Arizona has over 4,000 hours of sunshine per year - making it the sunniest place on the planet. The South Pole is the least sunny place with only 182 days a year off sunshine 
+</item>
+  <item type="oddFacts" grade="3,4,5">The strongest wind ever recorded wind was on Mt Washington, New Hampshire, USA. It was an amazing 231mph.
+</item>
+  <item type="oddFacts" grade="3,4,5">Diamonds are the hardest substance known to man. A diamond is 58 times harder than the next hardest mineral on earth.</item>
+  <item type="oddFacts" grade="1,2">The South Pole is the least sunny placeon earth with only 182 days a year off sunshine 
+</item>
+  <item type="oddFacts" grade="3,4,5">Intel introduces the first microprocessor, the Intel 4004 on November 15, 1971.</item>
+  <item type="oddFacts" grade="1,2">The most widely spoken language is Mandarin, nearly 1 billion people speak it, mainly in China.</item>
+  <item type="oddFacts" grade="1,2">English is the second most spoken language in the world.</item>
+  <item type="oddFacts" grade="1,2">English is the second most spoken language in the world.</item>
+  <item type="oddFacts" grade="3,4,5">The most widely spoken language is Mandarin, nearly 1 billion people speak it, mainly in northern and south-western China. English is the second most spoken language in the world.</item>
+  <item type="oddFacts" grade="1,2">The Cambodian alphabet is the world's largest alphabet, with 74 letters. </item>
+  <item type="oddFacts" grade="1,2">The world's shortest alphabet, used in the Solomon Islands, has only 11. </item>
+  <item type="oddFacts" grade="3,4,5">The Cambodian alphabet is the world's largest alphabet, with 74 letters. The world's shortest alphabet, used in the Solomon Islands, has only 11. </item>
+  <item type="oddFacts" grade="1,2">Sneezing with your eyes open is impossible</item>
+  <item type="oddFacts" grade="1,2">A sneeze generates a wind of 166 km/hr (100 mi/hr), and a cough moves out at 100 km/hr (60 mi/hr). </item>
+  <item type="oddFacts" grade="3,4,5">A sneeze generates a wind of 166 km/hr (100 mi/hr), and a cough moves out at 100 km/hr (60 mi/hr). </item>
+  <item type="oddFacts" grade="3,4,5">In 1783 Jean Pilatre de Rozier ( a Frenchman ) made the first balloon flight, reaching a peak altitude of about 500 ft, and traveling about 51/2 mi in 20 min.</item>
+  <item type="oddFacts" grade="1,2,3,4,5">The banana tree is not actually a tree, it is a herb. It bears fruit once a year and then dies.</item>
+  <item type="oddFacts" grade="3,4,5">Sound travels at a speed of around 767 miles per hour (1,230 kilometres per hour). </item>
+  <item type="oddFacts" grade="3,4,5">Light travels slower through different substances such as glass, water and air. </item>
+  <item type="people" grade="1,2,3,4,5">On April 30, 1789, George Washington became the first President of the United States.</item>
+  <item type="things" grade="1,2">Opened in 2010, the Burj Khalifa in Dubai is the tallest building in the world.</item>
+  <item type="things" grade="1,2,3,4,5">The tallest building in America is the Willius Tower in Chicago.</item>
+  <item type="things" grade="3,4,5">Opened in 2010, the Burj Khalifa in Dubai is the tallest building in the world. It is 828 meters ( 2,717 ft ) tall.</item>
+  <item type="geography" grade="1,2,3,4,5">Mount Everest is the tallest mountain in the world. It is 8850 meters (29035ft) high.</item>
+  <item type="geography" grade="1,2,3,4,5">The longest river is the Nile. It is 6,650 Km ( 4,132 miles ) long. It flows into the Mediterranean Sea.</item>
+  <item type="geography" grade="1,2,3,4,5">The Amazon is the second longest river. It is 6.400 km ( 4,000 miles ) long. It flows into the Atlantic ocean.</item>
+  <item type="geography" grade="1,2">Mount McKinley in Alaska in the highest mountain in America. It is 20,320 ft high. </item>
+  <item type="geography" grade="1,2">Alaska is the largest state in America.</item>
+  <item type="geography" grade="3,4,5">Mount McKinley in Alaska is the highest mountain in America. It is 20,320 ft high. Alaska is also the largest state in America, it is 656,425 square miles in size.</item>
+  <item type="geography" grade="1,2">The Pacific Ocean is the largest ocean in the world. It covers about 1/3 of its surface. </item>
+  <item type="geography" grade="3,4,5">The Pacific Ocean is the largest ocean in the world. It covers about 1/3 of its surface. It is 155.557 million sq km.</item>
+  <item type="space" grade="1,2">The moon is just over one quarter the size of the earth.</item>
+  <item type="space" grade="1,2">There are 9 planets that circle the sun.</item>
+  <item type="space" grade=",3,4,5">Gravity keeps Earth and the other planets in our solar system in orbit around the Sun. It also keeps the Moon in orbit around Earth.</item>
+  <item type="space" grade="3,4,5">There are 9 planets that circle the sun. They are divided into two groups: the inner planets (Mercury, Venus,Earth, and Mars) and the outer planets (Jupiter, Saturn, Uranus, Neptune, and Pluto). </item>
+  <item type="space" grade="3,4,5">Tides are caused by the rotation of the Earth and the gravitational effects of the Moon and Sun.</item>
+  <item type="space" grade="1,2,3,4,5">The moon orbits the Earth every 27.32 days</item>
+  <item type="space" grade="1,2">If you travelled to the Moon in a plane it would take about 16 days. It takes 3 days in a spaceship to get there.</item>
+  <item type="space" grade="3,4,5">The moon is 384,400 km from earth. If you travelled to the Moon in a plane it would take about 16 days. It takes 3 days in a spaceship to get there.</item>
+  <item type="space" grade="1,2,3,4,5">The biggest planet in the Solar System is Jupiter. It is 317 times as heavy as the earth</item>
+  <item type="space" grade="3,4,5">The Sun is one of about 200 billion stars in the Milky Way galaxy. The most current estimates guess that there are 100 to 200 billion galaxies in the Universe</item>
+  <item type="space" grade="1,2">The closest planet to earth is Venus.  It would take over 4 years to travel there by plane.</item>
+  <item type="space" grade="3,4,5">The closest planet to earth is Venus. It is about 38 million kilometers away. It would take over 4 years to travel there by plane.</item>
+  <item type="space" grade="3,4,5">The Sun's outer layer has a temperature of 6,000C . Inside the sun the temperature is 15,000,000 C.</item>
+  <item type="space" grade="1,2">If you could travel from Earth to the Sun in a plane it would take you 17 years</item>
+  <item type="space" grade="3,4,5">The average distance from the earth to the Sun is 150 million kilometers (93 million miles). If you could travel from Earth to the Sun in a plane it would take you 17 years</item>
+  <item type="space" grade="3,4,5">The Earth orbits the Sun at an average speed of 29.79 km/s ( 67,000 miles/hour).</item>
+  <item type="space" grade="3,4,5">In 1972 Ray Tomlinson at BBN developed the first e-mail program. In his first email to himself, he uses the @ sign. This was the first time it appeared in an e-mail address.</item>
+  <item type="Entertainment" grade="1,2,3,4,5">The first 'talkie' movie was Al Jolson's The Jazz Singer released in 1927.</item>
+  <item type="Body" grade="1,2,3,4,5">Roughly 70 percent of an adult's body is made up of water.</item>
+  <item type="Body" grade="3,4,5">Drinking too much water too quickly can lead to water intoxication which causes an imbalance of water in the brain </item>
+  <item type="plants" grade="3,4,5">The heaviest apple weighed 1.849 kg (4 lb 1 oz) and was grown and picked by Chisato Iwasaki at his apple farm in Hirosaki City, Japan October 24, 2005. 
+
+</item>
+  <item type="plants" grade="1,2, 3,4,5">There are around 2000 different plant types that humans use as food. 
+
+</item>
+  <item type="plants" grade="1,2, 3,4,5">There are about 375,000 species of plants, with more being discovered each year</item>
+</items>

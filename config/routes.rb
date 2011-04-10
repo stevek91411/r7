@@ -38,9 +38,9 @@ R7::Application.routes.draw do
   resources :students
   resources :topics
   resources :users
-  resource :session
+  resources :sessions do end
 resources :users
-resource :session  
+resource :session  do end
   
   match  'createFamilyAccount', :to => 'users#createFamilyAccount'
 match  'signup2', :to => 'users#new'

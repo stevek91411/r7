@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+.areatext4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	color: #ff4719;
+	text-decoration: none;
+	}
+	
+	#body_areadecPromo2mem{
+	width: 290px;
+	height: 292px;
+	background-image: url(images/paperboard.jpg);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	float: left;
+	}
+				

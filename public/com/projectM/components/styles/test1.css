@@ -1,0 +1,14 @@
+/* CSS file */
+Box
+{
+	backgroundAlpha: 0.56;
+	paddingLeft: 2;
+	paddingTop: 2;
+	paddingBottom: 2;
+	paddingRight: 2;
+	borderStyle: solid;
+	borderColor: #9DC7E5;
+	borderThickness: 4;
+	cornerRadius: 17;
+	backgroundColor: #F5B9B9;
+}

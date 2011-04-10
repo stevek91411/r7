@@ -2,13 +2,16 @@ class SessionsController < ApplicationController
 
   skip_before_filter :login_required
   
+  
+
   # GET /session/new.xml
   # render new.rhtml
-  def new
-  end
+  #def new
+  #end
 
   # GET /session/new        #checkForExistingSession
   def new    
+
     respond_to do |format|
         if ( self.current_user == nil )
           format.xml { render :xml => errorRsp( "NoSession" ) }
@@ -20,10 +23,19 @@ class SessionsController < ApplicationController
 
  # GET getFotdFile      
   def getFotdFile    
-  	
+
     fileName = Dir.pwd + params[:fact_file]
+    
+    data = ''
+  	f = File.open(fileName, "r") 
+  	
+    while (line = f.gets)
+		data += line
+	end
+	f.close
+	
     respond_to do |format|
-        format.xml { render :file => fileName }
+        format.xml { render :xml => data }
     end
   end
   
@@ -83,8 +95,7 @@ class SessionsController < ApplicationController
       
     if  allowSendEmail  
        Mymailer.deliver_logClientError(  params[:request][:msgSubject],  params[:request][:msgContent] )
-    end
-   
+    end 
   end
   
  
@@ -162,7 +173,6 @@ class SessionsController < ApplicationController
     cookies.delete :auth_token
     reset_session
     respond_to do |format|
-        format.html { render :action => 'new' }
         format.xml { render :text => "ok" }
     end
   end
@@ -313,7 +323,7 @@ end
 # GET /getAllStudentLoginData
   # GET /getAllStudentLoginData
   def getAllStudentLoginData
-    
+   
     # load all student login data, topic_activity_summaries, student_assignments, weekly_activity_summaries
     
     if  params[:today] != "" 

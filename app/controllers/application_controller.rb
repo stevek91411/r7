@@ -2,7 +2,12 @@ class ApplicationController < ActionController::Base
   #protect_from_forgery
    helper :all # include all helpers, all the time
   include AuthenticatedSystem
-  #before_filter :login_required
+  before_filter :login_required
+  before_filter :set_default_response_format
+	 	 
+	    def set_default_response_format  # for all responses to format.xml
+	      request.format = 'xml'.to_sym
+	    end
   
   $:.push("/whatever")
 
@@ -99,6 +104,15 @@ end
 		module CoreExtensions #:nodoc:
 			module Hash #:nodoc:
 				module Conversions
+				#rails 3
+				ActiveRecord::Base.class_eval do
+				  def to_xml(options = {}, &block)
+				    options[:dasherize] ||= false
+				    ActiveModel::Serializers::Xml::Serializer.new(self, options).serialize(&block)
+				  end
+				end
+				
+				# Rails 2				
 				# We force :dasherize to be false, since we never want
 				# it true. Thanks very much to the reader on the
 				# flexiblerails Google Group who suggested this better
@@ -115,7 +129,17 @@ end
 	
 			module Array #:nodoc:
 				module Conversions
-					# We force :dasherize to be false, since we never want
+				#rails 3
+				ActiveRecord::Base.class_eval do
+				  def to_xml(options = {}, &block)
+				    options[:dasherize] ||= false
+				    ActiveModel::Serializers::Xml::Serializer.new(self, options).serialize(&block)
+				  end
+				end
+		
+		
+				# Rails 2					
+				# We force :dasherize to be false, since we never want
 					# it to be true.
 					#unless method_defined? :old_to_xml
 					#	alias_method :old_to_xml, :to_xml
@@ -130,6 +154,16 @@ end
 	end
 	module ActiveRecord #:nodoc:
 	module Serialization
+		#rails 3
+		ActiveRecord::Base.class_eval do
+		  def to_xml(options = {}, &block)
+		    options[:dasherize] ||= false
+		    ActiveModel::Serializers::Xml::Serializer.new(self, options).serialize(&block)
+		  end
+		end
+
+
+		# Rails 2
 		# We force :dasherize to be false, since we never want it to
 		# be true.
 		#unless method_defined? :old_to_xml

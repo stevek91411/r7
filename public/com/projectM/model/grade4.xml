@@ -1,0 +1,1048 @@
+<TopicSets grade="4" >
+   		
+	<TopicSet>
+			<id>AdditionSubtraction-Grade4</id> <title>Add and Subtract</title> <description>Addition / Subtraction problems</description> 
+ 			<image>plus-minus-flat-icon90.png</image>
+			
+			<TopicGroup> <id>Addition-Grade4</id>	<title>Addition</title>   	
+				<Topic>
+					<id>T-Addition3Digit</id> <title>Upto 3 Digit Addition</title> <fullDesciption>Addition: upto 3 digit</fullDesciption> <prompt>Add the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.AddSet</problemGeneratorClass> 
+					<parameters>lowX:10 highX:999 lowY:100 highY:999 regroupingFlag:any maxTotal:-1</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<assistHelperClass>com.projectM.components.problems.helpers.AdditionHelper</assistHelperClass>									
+   				</Topic>  
+				<Topic>
+					<id>T-AdditionMissingNumberTo99Regrouping</id> <title>Missing number to 99</title> <fullDesciption>Addition: Regrouping, missing number to 99</fullDesciption> <prompt>What is the missing number?</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.AddSet</problemGeneratorClass> 
+					<parameters>lowX:10 highX:99 lowY:10 highY:99 regroupingFlag:true maxTotal:-1</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MissingNumberProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>				
+				<Topic>
+					<id>T-Addition5Digit</id> <title>5 Digit Addition</title> <fullDesciption>Addition: 5 digit</fullDesciption> <prompt>Add the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.AddSet</problemGeneratorClass> 
+					<parameters>lowX:1000 highX:99999 lowY:10000 highY:99999 regroupingFlag:true maxTotal:-1</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<assistHelperClass>com.projectM.components.problems.helpers.AdditionHelper</assistHelperClass>									
+   				</Topic>  				
+					<Topic>
+					<id>T-3NumberAdditionTo100</id> <title>3 Number addition</title> <fullDesciption>3 Number Addition</fullDesciption> <prompt>What is the total?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.basic.AddSet3Value</problemGeneratorClass> 
+					<parameters>low:100 high:9999 maxTotal:0</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.basic.SimpleProblemView3ValueCtl</problemViewCtlClass>     								
+					<assistHelperClass>com.projectM.components.problems.helpers.AdditionHelper</assistHelperClass>									
+   				</Topic>																			
+			</TopicGroup> 
+
+			<TopicGroup> <id>Subtraction-Grade4</id>	<title>Subtraction</title>   	
+				<Topic>
+					<id>T-Subtraction2Digit</id> <title>2 Digit Subtraction</title> <fullDesciption>Subtraction: 2 digit</fullDesciption> <prompt>Subtract the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.SubtractSet</problemGeneratorClass> 
+					<parameters>lowX:10 highX:99 regroupingFlag:any  setYValue:0</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>  	
+				<Topic>
+					<id>T-SubtractionMissingNumberTo99Regrouping</id> <title>Missing number to 99</title> <fullDesciption>Subtraction: Regrouping, missing number to 99</fullDesciption> <prompt>What is the missing number?</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.SubtractSet</problemGeneratorClass> 
+					<parameters>lowX:11 highX:99 regroupingFlag:true  setYValue:0</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MissingNumberProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>				
+				<Topic>
+					<id>T-Subtraction3Digit</id> <title>3 Digit Subtraction</title> <fullDesciption>Subtraction: 3 digit</fullDesciption> <prompt>Subtract the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.SubtractSet</problemGeneratorClass> 
+					<parameters>lowX:100 highX:999 regroupingFlag:any  setYValue:0</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic> 
+				<Topic>
+					<id>T-Subtraction5Digit</id> <title>5 Digit Subtraction</title> <fullDesciption>Subtraction: 5 digit</fullDesciption> <prompt>Subtract the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.SubtractSet</problemGeneratorClass> 
+					<parameters>lowX:100 highX:90000 regroupingFlag:any  setYValue:0</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>  							
+			</TopicGroup> 
+			 			 
+			 			 			
+		<TopicGroup> <id>SpeedTest-Grade4</id>	<title>Speed test</title>   	
+				<Topic>
+					<id>T-SpeedAddition2Digit</id> <title>2 Digit Addition</title> <fullDesciption>Addition: 2 digit speed test</fullDesciption> <prompt>Add the numbers</prompt>
+					<noOfProblems>40</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>120</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.AddSet</problemGeneratorClass> 
+					<parameters> lowX:10 highX:99 lowY:10 highY:99 regroupingFlag:any maxTotal:-1</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>  	
+				<Topic>
+					<id>T-SpeedSubtraction2Digit</id> <title>2 Digit Subtraction</title> <fullDesciption>Subtraction: 2 digit speed test</fullDesciption> <prompt>Subtract the numbers</prompt>
+					<noOfProblems>30</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>120</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.SubtractSet</problemGeneratorClass> 
+					<parameters>lowX:10 highX:99 regroupingFlag:any  setYValue:0</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>  							
+			</TopicGroup> 		
+ 		</TopicSet>
+ 
+		 <TopicSet>
+		 	<id>NumberProblems-Grade4</id> <title>Number Basics</title> <description>Number Problems</description> 
+ 			<image>abacus-flat-icon90.png</image>
+
+			<TopicGroup> <id>TG-numbers-Grade4</id>	<title>Number Problems</title>   	
+				<Topic>
+					<id>T-EvenOdd</id>	<title>Even and Odd</title> <fullDesciption>Even and Odd</fullDesciption> <prompt>Determine if the number is even or odd</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.EvenOddSet</problemGeneratorClass> 
+					<parameters>low:100 high:99999</parameters> 
+					<needsEnterKeyPrompt>false</needsEnterKeyPrompt>
+					<needsEnterKeyPrompt>false</needsEnterKeyPrompt>
+					<problemViewCtlClass>com.projectM.components.problems.number.EvenOddProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-ExpandedForm</id>	<title>Expanded form</title> <fullDesciption>Expanded form numbers</fullDesciption> <prompt>Write the number in Expanded Form</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>1</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.ExpandedAndStandardFormSet</problemGeneratorClass> 
+					<parameters>low:10000 high:999999 type:expanded multOfTen:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.number.ExpandedFormProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-StandardForm</id>	<title>Standard form</title> <fullDesciption>Standard form numbers</fullDesciption> <prompt>Write the number in Standard Form</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>1</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.ExpandedAndStandardFormSet</problemGeneratorClass> 
+					<parameters>low:10000 high:9999999 type:standardNumber multOfTen:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.number.StandardFormProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>				
+				<Topic>
+					<id>T-CompareNumbers</id>	<title>Compare Numbers</title> <fullDesciption>Compare Numbers</fullDesciption> <prompt>Compare the 2 numbers</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.CompareNumbersSet</problemGeneratorClass> 
+					<parameters>high:99999 type:number</parameters> 
+					<needsEnterKeyPrompt>false</needsEnterKeyPrompt>
+					<problemViewCtlClass>com.projectM.components.problems.number.CompareNumbersProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-PlaceValue</id>	<title>Place Value</title> <fullDesciption>Place Value numbers</fullDesciption> <prompt>What is the Place value of the underlined digit?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.number.PlaceValueSet</problemGeneratorClass> 
+					<parameters>low:100 high:10000000  includeDecimalPlace:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.number.PlaceValueProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>		 
+   				<Topic>
+					<id>T-RoundingNumbers</id>	<title>Rounding numbers</title> <fullDesciption>Rounding numbers</fullDesciption> <prompt>Round each number.</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>4</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.RoundingSet</problemGeneratorClass> 
+					<parameters>low:100 high:1000000  type:numberMixed</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.number.RoundingProblemMixedNumberViewCtl</problemViewCtlClass>     								
+   				</Topic>	
+			</TopicGroup>
+		</TopicSet>
+				
+		<TopicSet>
+		 	<id>TimesTables_revision</id> <title>Times tables</title> <description>Times tables revision</description> 
+ 			<image>times-tables-flat-icon90.png</image>
+
+			<TopicGroup> <id>TG-TinmesTable_grade4</id>	<title>Times tables</title>   	
+				<Topic>
+					<id>T-Mult2-Mult</id>	<title>Multiplication by 2</title> <fullDesciption>Multiply by 2</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:2 low:2 high:12 randomToBase:false </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>			
+				<Topic>
+					<id>T-Mult3-Mult</id>	<title>Multiplication by 3</title> <fullDesciption>Multiply by 3</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:3 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+				<Topic>
+					<id>T-Mult4-Mult</id>	<title>Multiplication by 4</title> <fullDesciption>Multiply by 4</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:4 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+				<Topic>
+					<id>T-Mult5-Mult</id>	<title>Multiplication by 5</title> <fullDesciption>Multiply by 5</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:5 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>  	
+				<Topic>
+					<id>T-Mult6-Mult</id>	<title>Multiplication by 6</title> <fullDesciption>Multiply by 6</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:6 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>  	
+				<Topic>
+					<id>T-MultBy7</id>	<title>Multiplication by 7</title> <fullDesciption>Multiply by 7</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:7 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>   	
+				<Topic>
+					<id>T-MultBy8</id>	<title>Multiplication by 8</title> <fullDesciption>Multiply by 8</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:8 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic> 	
+				<Topic>
+					<id>T-MultBy9</id>	<title>Multiplication by 9</title> <fullDesciption>Multiply by 9</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:9 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									 	
+   				</Topic> 	
+				<Topic>
+					<id>T-MultBy10</id>	<title>Multiplication by 10</title> <fullDesciption>Multiply by 10</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:10 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>   	
+				<Topic>
+					<id>T-MultBy11</id>	<title>Multiplication by 11</title> <fullDesciption>Multiply by 11</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:11 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>   	
+				<Topic>
+					<id>T-MultBy12</id>	<title>Multiplication by 12</title> <fullDesciption>Multiply by 12</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:12 low:2 high:12 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>   	
+				<Topic>
+					<id>T-Mult2To12</id>	<title>Multiplication test: 2 - 12</title> <fullDesciption>Multiplication 2 to 12 test</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:12 low:2 high:12 randomToBase:true baselow:2  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>	
+			   	<Topic>
+					<id>T-Mult2To12-MissingNumber</id> <title>Missing factor test: 2 - 12</title> <fullDesciption>Test: Multiplication Missing factor: 2 - 12</fullDesciption> <prompt>What is the Missing number?</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:12 low:2 high:12 randomToBase:true baselow:2  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MissingNumberProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>													
+   			</TopicGroup> 	
+			<TopicGroup> <id>TG-TimesTable_grade4</id>	<title>Expert</title>   	
+				<Topic>
+					<id>T-Mult13-Mult</id>	<title>Multiplication by 13</title> <fullDesciption>Multiply by 13</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:13 low:2 high:13 randomToBase:false </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>			
+				<Topic>
+					<id>T-Mult14-Mult</id>	<title>Multiplication by 14</title> <fullDesciption>Multiply by 14</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:14 low:2 high:14 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-Mult15-Mult</id>	<title>Multiplication by 15</title> <fullDesciption>Multiply by 15</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:15 low:2 high:15 randomToBase:false  </parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.MultProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+   			</TopicGroup> 	
+		</TopicSet>
+
+	
+	
+		<TopicSet>
+		 	<id>Mult-Grade4</id> <title>Multipication</title> <description>Multiplication</description> 
+ 			<image>mult-blue-flat-icon90.png</image>
+			
+			<TopicGroup> <id>TG-MultSingleDigit-Grade4</id>	<title>Single Digit</title>   	 	
+				<Topic>
+					<id>T-MultSingleDigitBy2Digit</id> <title>By 2 digit number</title> <fullDesciption>Multiplication: Single digit by 2 digit</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:9 low:10 high:99 randomToBase:true baselow:2</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass> 
+					<assistHelperClass>com.projectM.components.problems.helpers.MultiplicationHelper</assistHelperClass>									
+   				</Topic>
+				<Topic>
+					<id>T-MultSingleDigitBy3Digit</id> <title>By 3 digit number</title> <fullDesciption>Multiplication: Single digit by 3 digit</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:9 low:100 high:999 randomToBase:true baselow:2</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+ 					<assistHelperClass>com.projectM.components.problems.helpers.MultiplicationHelper</assistHelperClass>									
+  				</Topic>
+				<Topic>
+					<id>T-MultSingleDigitBy1or2or3Digit</id> <title>Test 2 and 3 digit</title> <fullDesciption>Multiplication: Single digit by 2 or 3 digit number</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:9 low:10 high:999 randomToBase:true baselow:2</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+ 					<assistHelperClass>com.projectM.components.problems.helpers.MultiplicationHelper</assistHelperClass>									
+  				</Topic>
+   			</TopicGroup>
+							
+			<TopicGroup> <id>TG-Mul2Digit-Grade4</id>	<title>2 Digit</title>   			   	
+				<Topic>
+					<id>T-Mult2DigitBy2Digit</id> <title>By 2 digit number</title> <fullDesciption>Multiplication: 2 digit by 2 digit</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:99 low:10 high:99 randomToBase:true baselow:10</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass> 
+					<assistHelperClass>com.projectM.components.problems.helpers.MultiplicationHelper</assistHelperClass>									
+   				</Topic>
+				<Topic>
+					<id>T-Mult2DigitBy3Digit</id> <title>By 3 digit number</title> <fullDesciption>Multiplication: 2 digit by 3 digit</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:99 low:100 high:999 randomToBase:true baselow:10</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+ 					<assistHelperClass>com.projectM.components.problems.helpers.MultiplicationHelper</assistHelperClass>									
+  				</Topic>
+   			</TopicGroup>  	
+				
+			<TopicGroup> <id>TG-Mul3Digit-Grade4</id>	<title>3 Digit</title>   			   	
+				<Topic>
+					<id>T-Mult3DigitBy3Digit</id> <title>By 3 digit number</title> <fullDesciption>Multiplication: 3 digit by 3 digit</fullDesciption> <prompt>Multiply the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.MultSet</problemGeneratorClass> 
+					<parameters>base:999 low:100 high:999 randomToBase:true baselow:100</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.SimpleProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+ 					<assistHelperClass>com.projectM.components.problems.helpers.MultiplicationHelper</assistHelperClass>									
+  				</Topic>
+   			</TopicGroup>				  									
+		</TopicSet>
+	
+		<TopicSet>
+		 	<id>DivisionRevisionGrade4</id> <title>Division Revision</title> <description>Division</description>
+	 		<image>divide-rev-flat-icon90.png</image> 
+			<TopicGroup> <id>TG-DividionRevision</id>	<title>Revision: 2 - 12</title>   	
+				<Topic>
+					<id>DivideBy2</id>	<title>Division by 2</title> <fullDesciption>Division by 2</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:2 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+				<Topic>
+					<id>DivideBy3</id>	<title>Division by 3</title> <fullDesciption>Division by 3</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:3 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>  	
+				<Topic>
+					<id>DivideBy4</id>	<title>Division by 4</title> <fullDesciption>Division by 4</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:4 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic> 	
+				<Topic>
+					<id>DivideBy5</id>	<title>Division by 5</title> <fullDesciption>Division by 5</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:5 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic> 	
+				<Topic>
+					<id>DivideBy6</id>	<title>Division by 6</title> <fullDesciption>Division by 6</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:6 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+				<Topic>
+					<id>DivideBy7</id>	<title>Division by 7</title> <fullDesciption>Division by 7</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:7 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>  	
+				<Topic>
+					<id>DivideBy8</id>	<title>Division by 8</title> <fullDesciption>Division by 8</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:8 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>  	
+				<Topic>
+					<id>DivideBy9</id>	<title>Division by 9</title> <fullDesciption>Division by 9</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:9 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>   	
+				<Topic>
+					<id>DivideBy10</id>	<title>Division by 10</title> <fullDesciption>Division by 10</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:10 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>   	
+				<Topic>
+					<id>DivideBy11</id>	<title>Division by 11</title> <fullDesciption>Division by 11</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:11 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+				<Topic>
+					<id>DivideBy12</id>	<title>Division by 12</title> <fullDesciption>Division by 12</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:12 highz:12 randomToBase:false  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+				<Topic>
+					<id>DivideBy2to12</id>	<title>Division test: 2 - 12</title> <fullDesciption>Division test: 2 - 12</fullDesciption> <prompt>Division test: 2 - 12</prompt>
+					<noOfProblems>20</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:12 highz:12 randomToBase:true baselow:2  addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>		
+   			</TopicGroup> 		
+				
+		</TopicSet>
+		
+		<TopicSet> <id>DivisionGrade4</id> <title>Division</title> <description>Division</description> 
+ 			<image>divide-orange-flat-icon90.png</image>
+
+				<TopicGroup> <id>TG-Division1Digit</id>	<title>1 digit Divisor</title>   	
+				<Topic>
+					<id>DivideBy1DigitNoR</id>	<title>No remainder</title> <fullDesciption>Division: one digit divisor, no remainder</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:9 lowz:10 highz:25 randomToBase:true baselow:2 addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewBoxCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>DivideBy1DigitWithR</id> <title>With remainder</title> <fullDesciption>Division: one digit divisor, with remainder</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:9 lowz:10 highz:25 randomToBase:true baselow:2 addRemainder:true divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewBoxCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+   			</TopicGroup> 		
+				
+			<TopicGroup> <id>TG-DivisionMultOf10</id>	<title>Multiples of 10 Divisor</title>   	
+				<Topic>
+					<id>DivideBy2MultOf10NoR</id> <title>No remainder</title> <fullDesciption>Division: divisor multiples of 10, no remainder</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:9 lowz:2 highz:9 randomToBase:true baselow:2 addRemainder:false divisorMultipliesOf10:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewBoxCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>								
+				<Topic>
+					<id>DivideBy2MultOf10WithR</id> <title>With remainder</title> <fullDesciption>Division: divisor multiples of 10, with remainder</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:9 lowz:2 highz:9 randomToBase:true baselow:2 addRemainder:true divisorMultipliesOf10:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewBoxCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+    			</Topic>								
+  			</TopicGroup>  			
+		
+			<TopicGroup> <id>TG-Division2Digit</id>	<title>2 digit Divisor</title>   					
+				<Topic>
+					<id>DivideBy2DigitNoR</id>	<title>No remainder</title> <fullDesciption>Division: two digit divisor, no remainder</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:50 lowz:10 highz:99 randomToBase:true baselow:10 addRemainder:false divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewBoxCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+				
+				<Topic>
+					<id>DivideBy2DigitWithR</id> <title>With remainder</title> <fullDesciption>Division: two digit divisor, with remainder</fullDesciption> <prompt>Divide the numbers</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.DivideSet</problemGeneratorClass> 
+					<parameters>base:50 lowz:10 highz:99 randomToBase:true baselow:10 addRemainder:true divisorMultipliesOf10:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.DivideProblemViewBoxCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+   			</TopicGroup> 								
+		</TopicSet>
+	
+		 <TopicSet> 
+		 	<id>Fractions-Grade4</id> <title>Fractions</title> <description>Fractions</description> 
+ 			<image>fractions-flat-icon90.png</image>
+
+  			<TopicGroup> <id>TG-FractionsReview-Grade4</id>	<title>Review basics</title>   	
+				<Topic>
+					<id>T-CompareFractions</id>	<title>Compare fractions</title> <fullDesciption>Compare fractions</fullDesciption> <prompt>Compare the 2 fractions</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>5</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.DualFractionSet</problemGeneratorClass> 
+					<parameters>high:12 type:COMPARE  useConstantDenominator:true useLowestTermAnswer:true</parameters>
+					<needsEnterKeyPrompt>false</needsEnterKeyPrompt> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.CompareFractionsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+ 				<Topic>
+					<id>T-LowestTermFractions</id>	<title>Simplest form</title> <fullDesciption>Simplest form fractions</fullDesciption> <prompt>Write the fraction in its simplest form</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.DualFractionSet</problemGeneratorClass> 
+					<parameters>high:10 type:SIMPLESTFORM  useConstantDenominator:false useLowestTermAnswer:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.AddSubtractFractionsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic> 	
+ 				<Topic>
+					<id>T-EquivalentFractions</id>	<title>Equivalent fractions</title> <fullDesciption>Equivalent fractions</fullDesciption> <prompt>Calculate the equivalent fraction</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.DualFractionSet</problemGeneratorClass> 
+					<parameters>high:12 type:EQUIVALENT useConstantDenominator:true useLowestTermAnswer:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.EquivalentFractionsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-FractionOf</id>	<title>Fraction off</title> <fullDesciption>Fraction off</fullDesciption> <prompt>Calculate the fraction of  the number</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.BasicFractionSet</problemGeneratorClass> 
+					<parameters>type:FractionOff highX:9  lowY:2  highY:10</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.WordFractionProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+ 				<Topic>
+					<id>T-SpellFractions</id>	<title>Spell fractions</title> <fullDesciption>Spell fractions</fullDesciption> <prompt>Spell the fraction</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.BasicFractionSet</problemGeneratorClass> 
+					<parameters>type:FractionSpelling highX:11  lowY:2 highY:12</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.SpellingFractionProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>			    				
+				<Topic>
+					<id>T-WriteFractions</id>	<title>Write fractions</title> <fullDesciption>Write fractions</fullDesciption> <prompt>Write the number as a fraction</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.BasicFractionSet</problemGeneratorClass> 
+					<parameters>type:FractionWrite highX:11  lowY:2  highY:12</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.WriteFractionProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   			</TopicGroup>
+  			<TopicGroup> <id>TG-Factors-Grade5</id>	<title>Factors</title>   	
+				<Topic>
+					<id>T-Factors-grade4</id>	<title>Factors of a number</title> <fullDesciption>Factors of a number</fullDesciption> <prompt>What are the factors ( separate numbers with spaces )</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.FactorSet</problemGeneratorClass> 
+					<parameters>type:factors lowX:10 highX:30 lowY:20 highY:40</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.fractions.FactorsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   				<Topic>
+					<id>T-GCF-grade4</id>	<title>GCF</title> <fullDesciption>GCF</fullDesciption> <prompt>What is the greatest common factor</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.FactorSet</problemGeneratorClass> 
+					<parameters>type:GCF lowX:10 highX:30 lowY:20 highY:40</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.fractions.GCFProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>			 
+   			</TopicGroup>
+   			
+			<TopicGroup> <id>TG-LikeDenominators-Grade4</id>	<title>Like Denominators</title>   				 
+			 	<Topic>
+					<id>T-AddFractionsLikeDen</id>	<title>Add fractions</title> <fullDesciption>Add fractions, like denominators</fullDesciption> <prompt>Add the fractions, convert answer to lowest terms if possible.</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.DualFractionSet</problemGeneratorClass> 
+					<parameters>high:12 type:ADDITION  useConstantDenominator:true useLowestTermAnswer:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.AddSubtractFractionsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-SubtractFractionsLikeDen</id>	<title>Subtract fractions</title> <fullDesciption>Subtract fractions, like denominators</fullDesciption> <prompt>Subtract the fractions, convert answer to lowest terms if possible.</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.DualFractionSet</problemGeneratorClass> 
+					<parameters>high:12 type:SUBTRACTION  useConstantDenominator:true useLowestTermAnswer:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.AddSubtractFractionsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+  			</TopicGroup>
+			<TopicGroup> <id>TG-UnlikeDenominators-Grade4</id>	<title>Unlike Denominators</title>   				 
+			 	<Topic>
+					<id>T-AddFractionsUnlikeDen</id>	<title>Add fractions</title> <fullDesciption>Add fractions, unlike denominators</fullDesciption> <prompt>Find common denominator, add fractions, convert answer to lowest terms.</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.ImproperFractionSet</problemGeneratorClass> 
+					<parameters>high:10 numberLow:0 numberHigh:0 type:ADDITION  useConstantDenominator:false useLowestTermAnswer:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.AddSubtractFractionsUnlikeDenominatorsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-SubtractFractionsUnlikeDen</id>	<title>Subtract fractions</title> <fullDesciption>Subtract fractions, unlike denominators</fullDesciption> <prompt>Find common denominator, subtract fractions, convert answer to lowest terms.</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.ImproperFractionSet</problemGeneratorClass> 
+					<parameters>high:10 numberLow:0 numberHigh:0 type:SUBTRACTION  useConstantDenominator:false useLowestTermAnswer:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.AddSubtractFractionsUnlikeDenominatorsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+  			</TopicGroup>		 
+			<TopicGroup> <id>TG-MixedNumber-Grade4</id>	<title>Mixed number</title>   	
+				<Topic>
+					<id>T-ImproperFractions</id>	<title>Improper fractions</title> <fullDesciption>Write improper fraction as a whole or mixed number in simplest form</fullDesciption> <prompt>Write as a whole number or mixed number.</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.ImproperFractionSet</problemGeneratorClass> 
+					<parameters>high:9 numberLow:20 numberHigh:60 type:MIXEDNUMBER   useConstantDenominator:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.ImproperFractionsProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-AddMixedNumberFractions</id>	<title>Add Mixed number</title> <fullDesciption>Add mixed numbers, like demominstor</fullDesciption> <prompt>Add, convert fraction to lowest terms if possible.</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.ImproperFractionSet</problemGeneratorClass> 
+					<parameters>high:12 numberLow:20 numberHigh:60 type:ADDITION  useConstantDenominator:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.AddSubtractMixedNumberProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-SubtractMixedNumberFractions</id>	<title>Subtract Mixed number</title> <fullDesciption>Subtract mixed numbers, like demominstor</fullDesciption> <prompt>Subtract, convert fraction to lowest terms if possible.</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.fractions.ImproperFractionSet</problemGeneratorClass> 
+					<parameters>high:12 numberLow:20 numberHigh:60 type:SUBTRACTION  useConstantDenominator:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.fractions.AddSubtractMixedNumberProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+  			</TopicGroup>					
+  		</TopicSet> 
+  		
+  	 <TopicSet>
+		 	<id>Measurement-Grade4</id> <title>Measurements</title> <description>Measurement Problems</description>
+   			<image>tapeMeasure-flat-icon90.png</image>
+ 
+		 	<TopicGroup> <id>TG-Length-GradeMetric4</id>	<title>Length ( mm, cm, m )</title>   	
+				<Topic>
+					<id>T-CompareMetricLength-Grade4</id>	<title>Metric compare</title> <fullDesciption>Compare metric length</fullDesciption> <prompt>Compare the lengths</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:lengthMetricCompare allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.CompareMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-ConvertLengthMetric-Grade4</id>	<title>Metric convert</title> <fullDesciption>Convert metric length</fullDesciption> <prompt>Convert the length</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:lengthMetricConvert allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.EqualMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   			</TopicGroup>
+		 	<TopicGroup> <id>TG-Length-GradeMetricCustomary4</id>	<title>Length ( in, ft, yd )</title>  
+				<Topic>
+					<id>T-CompareCustomaryLength-Grade4</id>	<title>Customary compare</title> <fullDesciption>Compare customary length</fullDesciption> <prompt>Compare the lengths</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:lengthCustomaryCompare allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.CompareMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-ConvertLengthCustomary-Grade4</id>	<title>Customary convert</title> <fullDesciption>Convert customary length</fullDesciption> <prompt>Convert the length</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:lengthCustomaryConvert allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.EqualMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+
+				<Topic>
+					<id>T-AddLength-Grade4</id>	<title>Addition</title> <fullDesciption>Add customary lengths</fullDesciption> <prompt>Add customary lengths</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.AddSubtractMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:length operand:+ specialSubtractFlag:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.AddSubtractMeasureProblemViewCtl</problemViewCtlClass>     								
+   				</Topic>
+				<Topic>
+					<id>T-SubtractLength-Grade4</id>	<title>Subtraction</title> <fullDesciption>Subtract customary lengths</fullDesciption> <prompt>Subtract customary lengths</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.AddSubtractMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:length operand:- specialSubtractFlag:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.AddSubtractMeasureProblemViewCtl</problemViewCtlClass>     								
+   				</Topic>   				
+   				
+ 			</TopicGroup>		 	
+ 
+		 	<TopicGroup> <id>TG-CapacityMetric-Grade4</id>	<title>Capacity</title>   	
+				<Topic>
+					<id>T-CompareCapacityMetric-Grade4</id>	<title>Metric Compare</title> <fullDesciption>Compare metric capacity</fullDesciption> <prompt>Compare the capacity</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:capacityMetricCompare allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.CompareMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-ConvertCapacityMetric-Grade4</id>	<title>Metric Convert</title> <fullDesciption>Convert metric capacity</fullDesciption> <prompt>Convert the capacity</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:capacityMetricConvert allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.EqualMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-CompareCapacityCustomary-Grade4</id>	<title>Customary Compare</title> <fullDesciption>Compare customary capacity</fullDesciption> <prompt>Compare the capacity</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:capacityCustomaryCompare allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.CompareMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-ConvertCapacityCustomary-Grade4</id>	<title>Customary Convert</title> <fullDesciption>Convert customary capacity</fullDesciption> <prompt>Convert the capacity</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:capacityCustomaryConvert allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.EqualMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+ 			</TopicGroup>	
+ 			
+ 		 	<TopicGroup> <id>TG-Mass-Grade4</id>	<title>Mass ( kg, g )</title>   	
+				<Topic>
+					<id>T-CompareMass-Grade4</id>	<title>Compare Mass</title> <fullDesciption>Compare mass</fullDesciption> <prompt>Compare the mass</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:massCompare allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.CompareMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+  				<Topic>
+					<id>T-ConvertMass-Grade4</id>	<title>Convert Mass</title> <fullDesciption>Convert mass</fullDesciption> <prompt>Convert the mass</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:massConvert allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.EqualMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+ 			</TopicGroup>
+
+		 	<TopicGroup> <id>TG-Weight-Grade4</id>	<title>Weight ( lb, oz )</title>   	
+				<Topic>
+					<id>T-CompareWeight-Grade4</id>	<title>Compare weight</title> <fullDesciption>Compare Weight</fullDesciption> <prompt>Compare the weight</prompt>
+					<noOfProblems>12</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:weightCompare allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.CompareMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+  				<Topic>
+					<id>T-ConvertWeight-Grade4</id>	<title>Convert weight</title> <fullDesciption>Convert Weight</fullDesciption> <prompt>Convert the weight</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.measures.BasicMeasureProblemSet</problemGeneratorClass> 
+					<parameters>type:weightConvert allowComplexConvert:false</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.measures.EqualMeasuresProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+ 			</TopicGroup>							 	
+ 		</TopicSet>
+
+		<TopicSet> 
+		 	<id>Decimals-Grade4</id> <title>Decimals</title> <description>Decimals</description> 
+ 			<image>decimal-flat-icon90.png</image>
+
+  			<TopicGroup> <id>TG-DecimalsTenthsAndHundredths-Grade4</id>	<title>Tenths & Hundredths</title>   	
+				<Topic>
+					<id>T-DecimalsShapes</id>	<title>Shapes</title> <fullDesciption>Shape as tenths and hundredths</fullDesciption> <prompt>Write as a fraction, then as a decimal</prompt>
+					<noOfProblems>10</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.decimals.BasicDecimalSet</problemGeneratorClass> 
+					<parameters>baseHigh:2 mixedNumberHigh:0</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.decimals.DecimalShapeProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-DecimalsTenthsHundredthsAsFraction-Grade4</id>	<title>Write as fraction</title> <fullDesciption>Write tenths & hundredths as fraction</fullDesciption> <prompt>What is the fraction</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.decimals.BasicDecimalSet</problemGeneratorClass> 
+					<parameters>baseHigh:2 mixedNumberHigh:0</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.decimals.DecimalAsFractionProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>						   		
+   				</Topic>
+				<Topic>
+					<id>T-DecimalsTenthsHundredthsSpellling-Grade4</id>	<title>Spell decimal</title> <fullDesciption>Spelling tenths & hundredths as decimal</fullDesciption> <prompt>Spell the decimal</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.decimals.BasicDecimalSet</problemGeneratorClass> 
+					<parameters>baseHigh:2 mixedNumberHigh:0</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.decimals.SpellingDecimalProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>						   		
+   				</Topic>
+			
+  			</TopicGroup>			 		 		
+
+  			<TopicGroup> <id>TG-DecimalsGreaterThanOne-Grade4</id>	<title>Greater than 1</title>   	
+				<Topic>
+					<id>T-DecimalsGreaterThanOneAsMixedNumber-Grade4</id>	<title>Write as mixed number</title> <fullDesciption>Write decimal as a mixed number</fullDesciption> <prompt>Write as a mixed number</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.decimals.BasicDecimalSet</problemGeneratorClass> 
+					<parameters>baseHigh:2 mixedNumberHigh:9</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.decimals.DecimalAsFractionProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>						   		
+   				</Topic>
+				<Topic>
+					<id>T-DecimalPlaceValue</id>	<title>Place Value</title> <fullDesciption>Decimal place value</fullDesciption> <prompt>What is the Place value of the underlined digit?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.number.PlaceValueSet</problemGeneratorClass> 
+					<parameters>low:10 high:300  decimalPlaces:2 includeDecimalPlace:true</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.number.PlaceValueProblemViewCtl</problemViewCtlClass>     								
+ 					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-CompareDecimals</id>	<title>Compare decimals</title> <fullDesciption>Compare decimals</fullDesciption> <prompt>Compare the 2 decimals</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.CompareNumbersSet</problemGeneratorClass> 
+					<parameters>high:20 type:decimals noOfDecimalPlaces:2</parameters> 
+					<needsEnterKeyPrompt>false</needsEnterKeyPrompt>
+					<problemViewCtlClass>com.projectM.components.problems.number.CompareNumbersProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-RoundingDecimalsToOne</id>	<title>Rounding to nearest 1</title> <fullDesciption>Rounding decimals to nearest one</fullDesciption> <prompt>Round to the nearest one</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.RoundingSet</problemGeneratorClass> 
+					<parameters>low:0 high:0 roundingToNearest:0 type:decimals</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.number.RoundingProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-RoundingDecimalsToTenth</id>	<title>Rounding to nearest tenth</title> <fullDesciption>Rounding decimals to nearest tenth</fullDesciption> <prompt>Round to the nearest tenth</prompt>
+					<noOfProblems>9</noOfProblems> <noOfRows>3</noOfRows> <noOfCols>3</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.RoundingSet</problemGeneratorClass> 
+					<parameters>low:0 high:0 roundingToNearest:1 type:decimals</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.number.RoundingProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.problems.BaseHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+  			</TopicGroup>			 					
+  
+   			<TopicGroup> <id>TG-AddSubtractDecimals-Grade4</id>	<title>Add, Subtract</title>   	
+				<Topic>
+					<id>T-addDecimals-Grade4</id>	<title>Addition</title> <fullDesciption>Add decimals</fullDesciption> <prompt>Add the decimals</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.decimals.DualDecimalSet</problemGeneratorClass> 
+					<parameters>noOfDecimalPlaces:2 type:add2Decimals</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.decimals.AddSubtractDecimalProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-subtractDecimals-Grade4</id>	<title>Subtraction</title> <fullDesciption>Subtract decimals</fullDesciption> <prompt>Subtract the decimals</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.decimals.DualDecimalSet</problemGeneratorClass> 
+					<parameters>noOfDecimalPlaces:2 type:subtract</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.decimals.AddSubtractDecimalProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>	
+  				<Topic>
+					<id>T-roundAndEstimateDecimals-Grade4</id>	<title>Round and estimate</title> <fullDesciption>Round and estimate decimals</fullDesciption> <prompt>Round to the nearest whole number and then add or subtract</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.decimals.DualDecimalSet</problemGeneratorClass> 
+					<parameters>noOfDecimalPlaces:2 type:addSubtract2Decimals</parameters>
+					<problemViewCtlClass>com.projectM.components.problems.decimals.AddSubtractDecimalProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass></helpViewCtlClass>									
+   				</Topic>		
+  			</TopicGroup>
+  		</TopicSet>  			 				
+  		
+ 		<TopicSet>
+		 	<id>Gemoetry-Grade4</id> <title>Geometry</title> <description>Geometry</description> 
+ 			<image>Penrose-Triangle-flat-icon90.png</image>
+			<TopicGroup> <id>TG-IdentiftyAngles-Grade4</id>	<title>Angles</title>   	
+				<Topic>
+					<id>T-IdentiftyAngleImage</id>	<title>Type of angle by image</title> <fullDesciption>Identify angle type from image</fullDesciption> <prompt>What is the type of angle?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:IdentifyAngleImage</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+				<Topic>
+					<id>T-IdentiftyAngleValue</id>	<title>Type of angle by value</title> <fullDesciption>Identify angle type from value</fullDesciption> <prompt>What is the type of angle?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>2</noOfRows> <noOfCols>4</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:IdentifyAngleValue</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   			 </TopicGroup>
+   			<TopicGroup> <id>TG-Triangles-Grade4</id>	<title>Triangles</title>   	
+				<Topic>
+					<id>T-IdentiftyAngleSIEImage</id>	<title>Classify by sides</title> <fullDesciption>Type of triangle: scalene, isosceles, equilateral</fullDesciption> <prompt>What is the type of the triangle?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:IdentifyTriangleImageSIE</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+   					<Topic>
+					<id>T-IdentiftyAngleAROImage</id>	<title>Classify by angle</title> <fullDesciption>Type of triangle: acute, right, obtuse</fullDesciption> <prompt>What is the type of the triangle?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:IdentifyTriangleImageARO</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   			 </TopicGroup> 
+   			 
+   			<TopicGroup> <id>TG-Lines-Grade4</id>	<title>Lines</title>   	
+				<Topic>
+					<id>T-PointLineLineSegment</id>	<title>Point, line, line segment</title> <fullDesciption>Type of line: point, ray, line, line segment</fullDesciption> <prompt>Identify each figure as a point, ray, line or line segment</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:TypeOfLine</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   				<Topic>
+					<id>T-TypeOfLines</id>	<title>Type of lines</title> <fullDesciption>Type of lines: parallel, intersecting, perpendicular</fullDesciption> <prompt>What is the type of the lines?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:TypeOfLines</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+				<Topic>
+					<id>T-LineOfSymmetry</id>	<title>Line of symmetry</title> <fullDesciption>Line of symmetry</fullDesciption> <prompt>Is it a line of symmetry</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:LineOfSymmetry</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+				<Topic>
+					<id>T-RotationalSymmetry</id>	<title>Rotational symmetry</title> <fullDesciption>Rotational symmetry</fullDesciption> <prompt>Does the shape have quarter turn or half turn symmetry?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:RotationalSymmetry</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+ 				<Topic>
+					<id>T-TypeOfCircle</id>	<title>Circle: radius, diameter</title> <fullDesciption>Circle : center, radius, diameter</fullDesciption> <prompt>Identify each line.</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:TypeOfCircle</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   			 </TopicGroup> 
+   			   			 		 			 			
+   			<TopicGroup> <id>TG-Polygons-Grade4</id>	<title>Polygons</title>   	
+				<Topic>
+					<id>T-OpenClosed</id>	<title>Open and Closed</title> <fullDesciption>Open and Closed shapes</fullDesciption> <prompt>Is the shape open or closed?</prompt>
+					<noOfProblems>6</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:OpenClosedShapes</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   				<Topic>
+					<id>T-CongruentSimilar</id>	<title>Congruent and Similar</title> <fullDesciption>Identify congruent and similar shapes</fullDesciption> <prompt>Are the shapes congruent or similar?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:IdentifyCongruentSimilarShapes</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>				
+				<Topic>
+					<id>T-TypeOfPolygon</id>	<title>Type of Polygon</title> <fullDesciption>Type of Polygon</fullDesciption> <prompt>What is the type of the polygon?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:TypeOfPolygon maxSidesForPolygon:8</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+ 				<Topic>
+					<id>T-Quadrilaterals</id>	<title>Type of Quadrilateral</title> <fullDesciption>Type of Quadrilateral</fullDesciption> <prompt>What is the type of the Quadrilateral?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:TypeOfQuadrilateral showWhichQuadrilaterals:some</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+   			 </TopicGroup>   			 		 			 			
+  		 			 
+ 			<TopicGroup> <id>TG-PAV-Grade4</id>	<title>Figures</title>   	
+				<Topic>
+					<id>T-PerimeterSomeSides</id>	<title>Perimeter</title> <fullDesciption>Calculate the perimeter of a figure</fullDesciption> <prompt>What is the perimeter of the figure?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:PerimeterSomeSides</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>
+  				<Topic>
+					<id>T-AreaMult</id>	<title>Area</title> <fullDesciption>Calculate the area of a figure</fullDesciption> <prompt>What is the area of the figure?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:AreaMult</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic>	
+ 				<Topic>
+					<id>T-VolumeGrade4</id>	<title>Volume</title> <fullDesciption>Calculate the volume of a figure</fullDesciption> <prompt>What is the volume of the figure?</prompt>
+					<noOfProblems>8</noOfProblems> <noOfRows>1</noOfRows> <noOfCols>2</noOfCols> <maxTimeInSec>0</maxTimeInSec>
+					<problemGeneratorClass>com.projectM.problems.geometry.BasicGeometrySet</problemGeneratorClass> 
+					<parameters>type:VolumeGrade4</parameters> 
+					<problemViewCtlClass>com.projectM.components.problems.geometry.ImageSelectProblemViewCtl</problemViewCtlClass>     								
+					<helpViewCtlClass>com.projectM.components.utils.help.ImageHelpViewCtl</helpViewCtlClass>									
+   				</Topic> 
+   			 </TopicGroup>   			  
+ 		</TopicSet> 		
+	</TopicSets>

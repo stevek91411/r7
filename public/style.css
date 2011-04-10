@@ -1,0 +1,54 @@
+		body { 	background-color: #FFFFFF;	font-size:12px; font-family: "Verdana", sans-serif, Georgia, "Times New Roman", Times, serif;
+		     color: #000000;	background: #FFf8dc url(images/70-1-faded-orange.gif) repeat-x; line-height: 160%; }
+		h1 { text-indent:10px; background-color:#f9c17f; color : #CC3300; margin: 4px 0px 4px 0px;padding-bottom : 6px;font : bold 20px Verdana, serif;border-bottom : 2px solid #cbc52a;}
+
+		div#outer {	width: 900px; background-color:#FFFFFF;  margin-left: auto;  margin-right: auto; 	padding: 0px;	}	
+		div#header { padding: 0px;	height:70px; margin: 0px; text-align: center; background-image:url(images/70-900-mathspert.gif); }
+		div#left { text-align : left; padding-left: 20px; width:520px; float:left;  margin: 10px;   }  /* border: thin solid #000000;; */
+		div#right { width: 318px; padding-top: 15px; 	margin: 0px; float: right;   }
+		div#footer { clear: both;  height: 70px; width: 100%; line-height: 90px;
+                         background: url(images/70-1-faded-orange.gif); top; repeat-x ; }
+        div#tryMathspert { clear: both;   width:100%;  }
+         a { COLOR: black /*The color of the link*/ }
+
+		/* getInTouch.html */
+		div#git-left { text-align : left; padding: 0px; padding-top: 10px; padding-left: 20px; width:450px; float:left;    }  /* border: thin solid #000000;; */
+		div#git-right { width: 420px; padding-top: 15px;	margin: 0px; float: right;   }
+
+
+	
+		/* Menu */
+		#menu {	 width: 500px;	height: 30px;	margin: 0 auto;	padding: 0;	float: right;  }
+		#menu ul { margin: 0; padding: 0px 0px 0px 25px; list-style: none; line-height: normal; }
+		#menu li {  float: left;	height: 50px;   }
+		#menu a { display: block; margin-top: 5px;	margin-right: 3px;	padding: 2px 10px 2px 10px;	background: url(images/15-2-faded-red.gif) no-repeat right 7px;
+				  text-decoration: none;	font-weight:bold; font-family: Verdana; Helvetica, sans-serif;	font-size: 17px; color: #000000;	border: none; }
+		#menu a:hover, #menu .current_page_item a {}
+		#menu .current_page_item a { padding-left: 0;}
+		#menu a:hover {	text-decoration: underline; }
+		ul {padding:0;margin:0 0 0 17px;list-style: square url(images/bullet.gif); }		
+		.indented  {  padding-left: 20pt; text-align : left  }
+		
+		/* features */
+		.feature {width: 90%;    padding-top: 25px;	margin: 0 auto;   }
+		.feature-text-left {width: 60%;   float:left; padding-top: 15px; }	
+		.img-right  {   margin:10px; height:auto; align:middle; width:auto;  float:left;  text-align:top; }		
+		.img-left  {   margin:2px;   height:auto;  width:auto;  float:left; }	
+		.feature-text-right {width: 60%;   float:right; padding-top: 15px;	  }			
+		
+		div#spacer {
+			 height:20px; width:100%; clear:both }
+		}
+		
+		ul {padding:0;margin:0 0 0 17px;list-style: square url(images/bullet.gif);}		
+		.indented  {  padding-left: 20pt; text-align : left  }
+		
+
+		div.centered { text-align:center;  margin: 0 auto; }
+		
+		img.centered {  display: block;   margin-left: auto;   margin-right: auto }
+		
+
+
+
+		
