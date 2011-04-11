@@ -24,7 +24,7 @@ class ClassListsController < ApplicationController
    # end
 
     respond_to do |format|
-      format.xml  { render :xml => @list }
+      format.xml  { render :xml => @list, :dasherize => false }
     end
   end
  
@@ -44,7 +44,7 @@ class ClassListsController < ApplicationController
         
     if @new_class.save
          respond_to do |format|
-          	format.xml { render :xml =>  @new_class }
+          	format.xml { render :xml =>  @new_class, :dasherize => false }
  		end
     else
         log_DB_errors(  "class", @new_class.errors ) 

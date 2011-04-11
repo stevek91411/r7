@@ -18,7 +18,7 @@ class TopicActivitySummariesController < ApplicationController
     end
 	        
     respond_to do |format|
-      format.xml  { render :xml => @topic_activity_summaries }
+      format.xml  { render :xml => @topic_activity_summaries.to_xml(:dasherize => false) }
     end
   end
 

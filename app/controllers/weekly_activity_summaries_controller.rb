@@ -66,7 +66,7 @@ class WeeklyActivitySummariesController < ApplicationController
     
      # noting fatal happened return the record
     respond_to do |format|
-        format.xml  { render :xml => @weekly_activity_summaries }
+        format.xml  { render :xml => @weekly_activity_summaries, :dasherize => false }
     end
   end
   

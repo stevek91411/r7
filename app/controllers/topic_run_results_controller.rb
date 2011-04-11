@@ -27,7 +27,7 @@ class TopicRunResultsController < ApplicationController
       end
     
     respond_to do |format|
-      format.xml  { render :xml => @topic_run_results }
+      format.xml  { render :xml => @topic_run_results, :dasherize => false }
     end
   end
 
@@ -150,7 +150,7 @@ class TopicRunResultsController < ApplicationController
     # noting fatal happened with the 'new'
     respond_to do |format|
       if @topic_run_result.save
-        format.xml  { render :xml => @weekly_activity_summary }   # retun the updated weekly_activity_summary
+        format.xml  { render :xml => @weekly_activity_summary, :dasherize => false }   # retun the updated weekly_activity_summary
       else
         format.xml  { render :xml => errorRsp( @topic_run_result.errors.to_s ) }
       end

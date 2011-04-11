@@ -22,7 +22,7 @@ class OpTimersController < ApplicationController
       end
        
       respond_to do |format|
-        format.xml  { render :xml => @op_timers }
+        format.xml  { render :xml => @op_timers, :dasherize => false }
       end
   end
   
@@ -34,7 +34,7 @@ class OpTimersController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @op_timer }
+      format.xml  { render :xml => @op_timer, :dasherize => false }
     end
   end
 
@@ -45,7 +45,7 @@ class OpTimersController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @op_timer }
+      format.xml  { render :xml => @op_timer, :dasherize => false }
     end
   end
 
@@ -85,15 +85,5 @@ class OpTimersController < ApplicationController
     end
   end
 
-  # DELETE /op_timers/1
-  # DELETE /op_timers/1.xml
-  def destroy
-    @op_timer = OpTimer.find(params[:id])
-    @op_timer.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(op_timers_url) }
-      format.xml  { head :ok }
-    end
-  end
+  
 end

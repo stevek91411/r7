@@ -26,7 +26,7 @@ class ClassAssignmentsController < ApplicationController
     end
      
     respond_to do |format|
-      format.xml  { render :xml => @class_assignments }
+      format.xml  { render :xml => @class_assignments, :dasherize => false }
     end
   end
 

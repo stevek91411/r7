@@ -346,17 +346,16 @@ end
       end
       return
     end
-    
-  
+     
 	        				
 	data = Array.new
-	data[0] = Array.new		# add a dummy first ebtry, otherwise the fierst item is not correct, leave it, don't know why	
+	#data[0] = Array.new		# add a dummy first ebtry, otherwise the first item is not correct, leave it, don't know why	
 	data[1] = @student_assignments
 	data[2] = @topic_activity_summaries
 	data[3] = @weekly_activity_summaries
 
     respond_to do |format|
-      format.xml  { render :xml => data }
+      format.xml  { render :xml => data, :dasherize => false }
     end
   end
   

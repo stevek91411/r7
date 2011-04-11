@@ -98,7 +98,7 @@ class TeachersController < ApplicationController
     end
        
     respond_to do |format|
-      format.xml  { render :xml => @summaries }
+      format.xml  { render :xml => @summaries, :dasherize => false }
     end
   end
   
