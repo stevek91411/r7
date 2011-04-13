@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<TITLE>comeBackPromo</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.rightbg {
+	background-image: http://www.mathspert.com/images/mailers/coax/images/rightbg.gif;
+	background-repeat: repeat-y;
+	background-position: left;
+}
+.leftbg {
+	background-image: http://www.mathspert.com/images/mailers/coax/images/leftbg.gif;
+	background-repeat: repeat-y;
+	background-position: right;
+}
+body,td,p,a{
+margin:0;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#000000;
+}
+.hdr1{
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:16px;
+color:#000000;
+padding-top:0px;
+padding-bottom:0px;
+
+
+}
+.date{
+color:#333333;
+}
+.baselink{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:normal;
+font-size:10px;
+color:#FFFFFF;
+}
+.headertd{
+padding-left:14px;
+padding-right:20px;
+}
+.contenttd{
+padding-left:14px;
+padding-right:20px;
+padding-top:13px;
+padding-bottom:20px;
+}
+-->
+</style>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<TABLE WIDTH=750 BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD width="100" ROWSPAN=6 class="leftbg">&nbsp;			</TD>
+		<TD>
+			<IMG SRC="http://www.mathspert.com/images/mailers/coax/images/top-filler.gif" WIDTH=214 HEIGHT=24></TD>
+		<TD>
+			<IMG SRC="http://www.mathspert.com/images/mailers/coax/images/mainpictop.gif" WIDTH=120 HEIGHT=24></TD>
+		<TD WIDTH=216 HEIGHT=24 align="right" class="date"></TD>
+		<TD width="125" ROWSPAN=6 class="rightbg">&nbsp;			</TD>
+	</TR>
+	<TR>
+		
+		<TD COLSPAN=9>			<a href="http://www.Mathspert.com"><img src="http://www.mathspert.com/images/mailers/coax/images/mainpic2Flat.png" width=550 height=124 border="0"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<a href="http://www.mathspert.com"><IMG SRC="http://www.mathspert.com/images/mailers/coax/images/visit-ms.gif" WIDTH=550 HEIGHT=30 border="0"></a></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT=250 COLSPAN=3 valign="top" BGCOLOR=#FFFF95 class="contenttd"><p class="hdr1"><br/><%= @greeting %> </p>
+		 Welcome to Mathspert. 
+		  <br/><br/>Your trial family account has been created. It is valid until <%= @membership_expires %></i>.</p>
+<br/><br/>
+<DIV CLASS="indented">
+<b>Parent Login</b>
+<table border="2">
+	<tr>
+		<th>Username</th>
+		<th>Password</th>
+	</tr>
+
+  		<tr>
+    		<td><%= @login %></i></td>
+    		<td><%= @password %></td>
+  		</tr>
+</table> 
+<br/>
+<b>Student Login</b>
+<table border="2">
+	<tr>
+		<th>Username</th>
+		<th>Password</th>
+	</tr>
+
+  		<tr>
+    		<td><%= @student_login %></i></td>
+    		<td><%= @student_password %></td>
+  		</tr>
+</table>
+
+</DIV>
+<br/>  
+<br/>You can add an additional student account by logging in at www.mathspert.com.
+
+<br/><br/>If you have any other questions, please email or call Maribel at the Member support hotline 818 518 8987.
+
+<br/><br/>Regards
+<br/><br/>Mathspert support
+<br/><br/><br/><br/></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 bgcolor="#D40006">&nbsp;&nbsp;&nbsp;&nbsp;© Copyright 2010 www.mathspert.com. All Rights Reserved. </TD>
+	</TR>
+	<TR>
+		<TD height="2" COLSPAN=3 bgcolor="#FF2300"></TD>
+	</TR>
+</TABLE>
+
+</BODY>
+</HTML>

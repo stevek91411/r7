@@ -37,10 +37,10 @@ class GiftCertsController < ApplicationController
 
         if  allowSendEmail  
           # notify stevek that a new student account was created           
-          Mymailer.deliver_giftCert( "stevek91411@yahoo.com", @gift_cert.purchaser_name, @gift_cert.activiation_code, 
-                           @gift_cert.status,  "New Gift certificate:" )
-          Mymailer.deliver_giftCert( "8182617590@txt.att.net", @gift_cert.purchaser_name, @gift_cert.activiation_code, 
-                           @gift_cert.status,  "New Gift certificate: step1" )         
+          MsMailer.giftCert( "stevek91411@yahoo.com", @gift_cert.purchaser_name, @gift_cert.activiation_code, 
+                           @gift_cert.status,  "New Gift certificate:" ).deliver
+          MsMailer.giftCert( "8182617590@txt.att.net", @gift_cert.purchaser_name, @gift_cert.activiation_code, 
+                           @gift_cert.status,  "New Gift certificate: step1" ).deliver         
         end
          
     	respond_to do |format|
@@ -59,10 +59,10 @@ class GiftCertsController < ApplicationController
     
         if  allowSendEmail  
           # notify stevek that a new student account was created
-         Mymailer.deliver_giftCert( "stevek91411@yahoo.com", gift_cert.purchaser_name, gift_cert.activiation_code, 
-                           params[:gift_cert][:status],  "Update Gift certificate status to " +  params[:gift_cert][:status] )
-         Mymailer.deliver_giftCert( "8182617590@txt.att.net", gift_cert.purchaser_name, gift_cert.activiation_code, 
-                           params[:gift_cert][:status],  "Update Gift certificate status to " +  params[:gift_cert][:status] )
+         MsMailer.giftCert( "stevek91411@yahoo.com", gift_cert.purchaser_name, gift_cert.activiation_code, 
+                           params[:gift_cert][:status],  "Update Gift certificate status to " +  params[:gift_cert][:status] ).deliver
+         MsMailer.giftCert( "8182617590@txt.att.net", gift_cert.purchaser_name, gift_cert.activiation_code, 
+                           params[:gift_cert][:status],  "Update Gift certificate status to " +  params[:gift_cert][:status] ).deliver
          end
          
     respond_to do |format|

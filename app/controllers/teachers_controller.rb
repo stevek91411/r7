@@ -144,10 +144,10 @@ class TeachersController < ApplicationController
      if  allowSendEmail  
       # notify stevek that a new teacher account was created
       log_message "xx= " + @teacher.inspect.gsub( "#<", "" )
-   	   Mymailer.deliver_new_school_account(  "teacher", @teacher.school_id, "", @teacher.inspect.gsub( "#<", "" ) )
+   	   MsMailer.new_school_account(  "teacher", @teacher.school_id, "", @teacher.inspect.gsub( "#<", "" ) ).deliver
                            
       if params[:user][:send_welcome_email] == "true"
-     	Mymailer.deliver_teacher_welcome( @teacher.first_name, @teacher.email, @user.login, @user.crypted_password  )
+     	MsMailer.teacher_welcome( @teacher.first_name, @teacher.email, @user.login, @user.crypted_password  ).deliver
       end
                                 
                                 
@@ -235,7 +235,7 @@ class TeachersController < ApplicationController
      @last_name =params[:user][:student][:last_name]
      if  allowSendEmail  
       # notify stevek that a new student account was created
-   	   Mymailer.deliver_new_school_account(  "student", @student.school_id, @student.grade, @student.inspect.gsub( "#<", "" ) )
+   	   MsMailer.new_school_account(  "student", @student.school_id, @student.grade, @student.inspect.gsub( "#<", "" ) ).deliver
      end
         
      if @student.save

@@ -1,0 +1,40 @@
+ <STYLE TYPE="text/css">
+<!--
+.indented
+   {
+   padding-left: 20pt;
+   }
+-->
+</STYLE>
+
+<i><b><%= @name %></b></i>
+<br/>
+<br/>Welcome to Mathspert. Your family account has been created. It is valid until <%= @membership_expires %></i>.</p>
+<br/><br/>
+<DIV CLASS="indented">
+
+<table border="2">
+	<tr>
+		<th>Username</th>
+		<th>Password</th>
+	</tr>
+
+  		<tr>
+    		<td><%= @login %></i></td>
+    		<td><%= @password %></td>
+  		</tr>
+</table> 
+</DIV>
+ 
+<br/>You can now create and manage 2 student accounts by logging in at www.mathspert.com.
+<br/>
+<br/>Please forward your payment of $<%= @payment_amount%> to:
+<DIV CLASS="indented">
+<br>Mathspert
+<br>PO Box 9002,
+<br>Calabasas,
+<br>CA, 91372</pre>
+</DIV>
+<br/><br/>Make cheque payable to Mathspert and include your email address.
+<br/><br/>If you have any questions or suggestions please email support@mathspert.com. 
+ 

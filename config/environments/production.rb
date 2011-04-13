@@ -46,4 +46,19 @@ R7::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+ 
+config.action_mailer.delivery_method = :smtp 
+config.action_mailer.smtp_settings = { 
+  :address => "mail.mathspert.com",
+  :port => 26,
+  :user_name => "stevek91",
+  :password => "1Cookstown!",
+  :authentication => :plain
+  :enable_starttls_auto => false
+
+}
+
+# config/environments/development.rb
+config.action_mailer.default_url_options = { :host => "localhost:3000" }
+
 end

@@ -116,8 +116,8 @@ class UsersController < ApplicationController
 
          if  allowSendEmail  
           # notify stevek that a new agent account was created
-          Mymailer.deliver_new_account( "stevek91411@yahoo.com", @agent.email,@agent.first_name, 
-                                    @agent.last_name, @user.user_type, "New agent" )
+          MsMailer.new_account( "stevek91411@yahoo.com", @agent.email,@agent.first_name, 
+                                    @agent.last_name, @user.user_type, "New agent" ).deliver
          end
     
          if @agent.save
@@ -165,8 +165,8 @@ class UsersController < ApplicationController
          @last_name =params[:user][:student][:last_name]
          if  allowSendEmail  && @user.login[0..4] != "PTest"
           # notify stevek that a new student account was created
-          Mymailer.deliver_new_account( "stevek91411@yahoo.com", @student.email,@student.first_name, 
-                                    @student.last_name, @user.user_type, "", @student.inspect.gsub( "#<", "" ) )
+          MsMailer.new_account( "stevek91411@yahoo.com", @student.email,@student.first_name, 
+                                    @student.last_name, @user.user_type, "", @student.inspect.gsub( "#<", "" ) ).deliver
          end
     
          if @student.save
@@ -207,16 +207,16 @@ class UsersController < ApplicationController
  
   		  if (  allowSendEmail && @user.login[0..4] != "PTest" )
 			  # notify stevek that a new parent account was created
-              Mymailer.deliver_new_account( "stevek91411@yahoo.com", @parent.email, @user.login, 
+              MsMailer.new_account( "stevek91411@yahoo.com", @parent.email, @user.login, 
                                     @parent.last_name, @user.user_type, "-" + @parent.register_type +
-                                    ", $" +  @parent.payment_amount.to_s, @parent.inspect.gsub( "#<", "" ) ) 
+                                    ", $" +  @parent.payment_amount.to_s, @parent.inspect.gsub( "#<", "" ) ).deliver 
              # notify stevek cell that a new parent account was created
-             Mymailer.deliver_new_account( "8182617590@txt.att.net", @parent.email, @user.login, 
+             MsMailer.new_account( "8182617590@txt.att.net", @parent.email, @user.login, 
                                     @parent.last_name, @user.user_type, "-" + @parent.register_type +
-                                    ", $" +  @parent.payment_amount.to_s ) 
+                                    ", $" +  @parent.payment_amount.to_s ).deliver
       		 # send parent the welcome email
-	         Mymailer.deliver_welcomeTrail(  @parent.first_name, @parent.email, @user.login, 
-	                 @user.crypted_password, @parent.membership_expires.strftime("%B-%d-%Y") ) # January-05-2009                                            
+	         MsMailer.welcomeTrail(  @parent.first_name, @parent.email, @user.login, 
+	                 @user.crypted_password, @parent.membership_expires.strftime("%B-%d-%Y") ).deliver # January-05-2009                                            
  
           end
                   
@@ -326,16 +326,16 @@ class UsersController < ApplicationController
        
     if (  allowSendEmail  )
 	      # notify stevek that a new parent account was created
-          Mymailer.deliver_new_account( "stevek91411@yahoo.com", @parent.email, @parent.login, 
+          MsMailer.new_account( "stevek91411@yahoo.com", @parent.email, @parent.login, 
                                     @parent.last_name, "Parent + Student ", " $" +  @parent.payment_amount.to_s,  
-                                    @parent.inspect.gsub( "#<", "" ), @student.inspect.gsub( "#<", "" ) ) 
+                                    @parent.inspect.gsub( "#<", "" ), @student.inspect.gsub( "#<", "" ) ).deliver 
            # notify stevek cell that a new parent account was created
-          Mymailer.deliver_new_account( "8182617590@txt.att.net", @parent.email, @parent.login, 
-                                    @parent.last_name, "Parent + Student ", " $" +  @parent.payment_amount.to_s ) 
+          MsMailer.new_account( "8182617590@txt.att.net", @parent.email, @parent.login, 
+                                    @parent.last_name, "Parent + Student ", " $" +  @parent.payment_amount.to_s ).deliver 
       	  # send parent the welcome email
-	      Mymailer.deliver_welcomeTrailFamily(  @parent.first_name, @parent.email, params[:family][:parent][:user][:login], 
+	      MsMailer.welcomeTrailFamily(  @parent.first_name, @parent.email, params[:family][:parent][:user][:login], 
 	                params[:family][:parent][:user][:password], params[:family][:student][:login], 
-	                params[:family][:student][:password], @parent.membership_expires.strftime("%B-%d-%Y") ) # January-05-2009                                            
+	                params[:family][:student][:password], @parent.membership_expires.strftime("%B-%d-%Y") ).deliver # January-05-2009                                            
  
      end      
  end

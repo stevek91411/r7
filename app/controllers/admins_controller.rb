@@ -206,8 +206,8 @@ def coaxParent
         		end
         end
  
-   		Mymailer.deliver_coax(  params[:payment_amount],  params[:full_price], @parent.membership_expires.strftime("%B %d"),
-   										@parent.email, params[:greeting], 	@user.login, @user.crypted_password )
+   		MsMailer.coax(  params[:payment_amount],  params[:full_price], @parent.membership_expires.strftime("%B %d"),
+   										@parent.email, params[:greeting], 	@user.login, @user.crypted_password ).deliver
                                                 
     	respond_to do |format|
               format.xml { render :xml => @parent }

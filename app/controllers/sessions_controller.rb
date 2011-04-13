@@ -69,19 +69,19 @@ class SessionsController < ApplicationController
    
      if  allowSendEmail  
 
-         Mymailer.deliver_contactUsConfimationToUser( user_email, first_name, 
+         MsMailer.contactUsConfimationToUser( user_email, first_name, 
                                last_name,  
-                               params[:contactType], params[:msg], params[:source_program] )
+                               params[:contactType], params[:msg], params[:source_program] ).deliver
                                
         # forward to mathspert support
-        Mymailer.deliver_contactUsFowardToSupport( user_email, first_name, 
+        MsMailer.contactUsFowardToSupport( user_email, first_name, 
                                last_name,   login,
-                               params[:contactType], params[:msg], params[:source_program] )
+                               params[:contactType], params[:msg], params[:source_program] ).deliver
      
         # forward to stevek91411 support
-        Mymailer.deliver_contactUsFowardStevek91411( user_email, first_name, 
+        MsMailer.contactUsFowardStevek91411( user_email, first_name, 
                                last_name, login,
-                               params[:contactType], params[:msg], params[:source_program] )
+                               params[:contactType], params[:msg], params[:source_program] ).deliver
     end
   end
   
@@ -94,7 +94,7 @@ class SessionsController < ApplicationController
     end
       
     if  allowSendEmail  
-       Mymailer.deliver_logClientError(  params[:request][:msgSubject],  params[:request][:msgContent] )
+       MsMailer.logClientError(  params[:request][:msgSubject],  params[:request][:msgContent] ).deliver
     end 
   end
   
@@ -131,7 +131,7 @@ class SessionsController < ApplicationController
     if params[:login].index( "projectMDemo" ) != nil
       # just email that someone has used the demo
       if  allowSendEmail 
-         Mymailer.deliver_infoToStevek91411(  params[:login] + " login, grade " + params[:grade], "" )
+         MsMailer.infoToStevek91411(  params[:login] + " login, grade " + params[:grade], "" ).deliver
       end
       respond_to do |format|    
         format.xml { render :text => "ok" }
@@ -152,7 +152,7 @@ class SessionsController < ApplicationController
       end
 
       if  allowSendEmail  &&  params[:login] != "admin-mx" && params[:login][0..4] != "PTest"
-       # Mymailer.deliver_infoToStevek91411(  "login for " + self.current_user.user_type + " : " + params[:login], "" )
+       MsMailer.infoToStevek91411(  "login for " + self.current_user.user_type + " : " + params[:login], "" ).deliver
       end
       respond_to do |format|    
         format.xml { render :xml => self.current_user.to_xml }
@@ -258,16 +258,16 @@ class SessionsController < ApplicationController
             if  allowSendEmail  
                  
                 # notify stevek that a  parent account was paid
-                Mymailer.deliver_new_account( "stevek91411@yahoo.com", @parent.email,@parent.first_name, 
-                                    @parent.last_name, @user.user_type, ", paid $" + @parent.payment_amount.to_s )
+                MsMailer.new_account( "stevek91411@yahoo.com", @parent.email,@parent.first_name, 
+                                    @parent.last_name, @user.user_type, ", paid $" + @parent.payment_amount.to_s ).deliver
 
              	# notify stevek cell that a new parent account was created
-                Mymailer.deliver_new_account( "8182617590@txt.att.net", @parent.email,@parent.first_name, 
-                                    @parent.last_name, @user.user_type, ", paid $" + @parent.payment_amount.to_s )        
+                MsMailer.new_account( "8182617590@txt.att.net", @parent.email,@parent.first_name, 
+                                    @parent.last_name, @user.user_type, ", paid $" + @parent.payment_amount.to_s ).deliver        
 
 	      		# send parent the welcome email
-	         	Mymailer.deliver_welcome( @parent.first_name, @parent.email, @user.login, 
-	                 @user.crypted_password, @parent.membership_expires.strftime("%B-%d-%Y") ) # January-05-2009                                            
+	         	MsMailer.welcome( @parent.first_name, @parent.email, @user.login, 
+	                 @user.crypted_password, @parent.membership_expires.strftime("%B-%d-%Y") ).deliver # January-05-2009                                            
            end
        else
             format.xml { render :xml =>  log_DB_errors(  "parent", @parent.errors ) }
@@ -314,7 +314,7 @@ end
       end
       
      if  allowSendEmail  
-       Mymailer.deliver_forgotten_password(  params[:email], "guest",  @all_users )
+       MsMailer.forgotten_password(  params[:email], "guest",  @all_users ).deliver
     end
     
     end
@@ -347,15 +347,15 @@ end
       return
     end
      
-	        				
-	data = Array.new
-	data[0] = Array.new		# add a dummy first ebtry, otherwise the first item is not correct, leave it, don't know why	
-	data[1] = @student_assignments
-	data[2] = @topic_activity_summaries
-	data[3] = @weekly_activity_summaries
-
+	     
+	res = "<arrays>" + 
+		  @student_assignments.to_xml( :skip_instruct => true, :dasherize => false, :skip_types => true) +
+		  @topic_activity_summaries.to_xml( :skip_instruct => true, :dasherize => false ) +
+		  @weekly_activity_summaries.to_xml( :skip_instruct => true, :dasherize => false ) +
+     "</arrays>" 
+  
     respond_to do |format|
-      format.xml  { render :xml => data, :dasherize => false }
+      format.xml  { render :xml => res }
     end
   end
   
@@ -404,7 +404,6 @@ end
         end       
     end
   end
-  
 end
 
 

@@ -39,5 +39,18 @@ config.autoload_paths += %W(#{config.root}/lib)
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    config.action_mailer.delivery_method = :smtp 
+config.action_mailer.smtp_settings = { 
+  :address => "mail.mathspert.com",
+  :port => 26,
+  :user_name => "stevek91",
+  :password => "1Cookstown!",
+  :authentication => :plain
+}
+
+# config/environments/development.rb
+config.action_mailer.default_url_options = { :host => "localhost:3000" }
+
   end
 end
