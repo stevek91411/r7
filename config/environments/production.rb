@@ -19,7 +19,7 @@ R7::Application.configure do
   # just comment this out and Rails will serve the files
 
   # See everything in the log (default is :info)
-  # config.log_level = :debug
+  config.log_level = :info
 
   # Use a different logger for distributed setups
   # config.logger = SyslogLogger.new
@@ -53,8 +53,8 @@ config.action_mailer.smtp_settings = {
   :port => 26,
   :user_name => "stevek91",
   :password => "1Cookstown!",
-  :authentication => :plain
-  :enable_starttls_auto => false
+  :authentication => :plain,
+  :enable_starttls_auto => true
 
 }
 
