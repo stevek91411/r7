@@ -187,11 +187,11 @@ def coaxParent
     @user = User.find(params[:id])    
 	                               
      															     															      
-	@user.membership_expires = Time.now + 2.week + 1.day  # 2 weeks free trial 
+	@user.membership_expires = Time.now + 1.week + 1.day  # 1 weeks free trial 
 	@user.save 
 	
     @parent.payment_amount = params[:payment_amount]
-	@parent.membership_expires = Time.now + 2.week + 1.day  # 2 weeks free trial
+	@parent.membership_expires = Time.now + 1.week + 1.day  # 1 weeks free trial
 
 	     															
     if @parent.save
@@ -247,6 +247,12 @@ end
   # GET /admins/new.xml
   def new
 
+    MsMailer.logClientError( "ERROR", " Admin..new not available"  ).deliver
+  	if true 
+  		return 
+  	end
+
+
     if session[:user_type] != "admin-mx"   # basic security trap
             log_error session[:user_type] + " user type found in  request to new"
 	   return
@@ -263,7 +269,12 @@ end
   # POST /admins
   # POST /admins.xml
   def create
-  
+
+   MsMailer.logClientError( "ERROR", " Admin.create not available"  ).deliver
+  	if true 
+  		return 
+  	end
+  	  
     if session[:user_type] != "admin-mx"   # basic security trap
             log_error session[:user_type] + " user type found in  request to new"
 	   return
