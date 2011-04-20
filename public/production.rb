@@ -54,7 +54,7 @@ config.action_mailer.smtp_settings = {
   :user_name => "stevek91",
   :password => "1Cookstown!",
   :authentication => :plain,
-  :enable_starttls_auto => false
+  :enable_starttls_auto => true
 
 }
 
